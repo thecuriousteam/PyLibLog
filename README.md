@@ -12,4 +12,3 @@
 </br>
 All rights reserved by <a rel="license" href="https://curiousdevelopers.in/">Curious Developers Community</a>.
 
-Sorry for wrint
