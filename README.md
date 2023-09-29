@@ -8,7 +8,8 @@ Teaching and sharing information about Python libraries through blog posts. Thes
 2. Framework - ReactJs
 3. DevOps Technology
 
-## Git Steps
+<h2 align = "center">Git Commands</h2>
+```
 1. git flow -h (gives the list of sub commands)
 2. git flow init (initializes the repository)
 3. git status (shows which branch we are in)
@@ -26,7 +27,7 @@ Teaching and sharing information about Python libraries through blog posts. Thes
 8.  git push --set-upstream origin featureName
 9.  git flow release start 1.2.1
 10. git flow release finish –kn <1.1.1>
-
+```
 ### Core Team Developers
 1. Kumbhaj Shukla
 2. Nandan G N
