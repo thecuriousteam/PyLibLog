@@ -1,4 +1,7 @@
-# PyLibLog
+<h1 align = "center">PyLibLog - Your Python Library Encyclopedia 🐍📚</h1>
+```
+Python is renowned for its extensive library ecosystem, but navigating through the vast array of libraries can be a daunting task. That's where PyLibLog comes to your rescue. We've created a one-stop destination for Python developers, learners, and enthusiasts to explore, understand, and leverage Python libraries effectively.
+```
 "Teaching and sharing information about Python libraries through blog posts. These blogs include explanations, definitions, examples, and what happens when you use them."
 </br>
 
@@ -32,7 +35,7 @@
 3. Shreya Sureka
 4. Kajal Lanjhiyana
 5. Kumari Ranjana Yada🇻
-6.Sravani
+6. Sravani
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
 </a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
