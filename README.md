@@ -1,8 +1,6 @@
 <h1 align = "center">PyLibLog - Your Python Library Encyclopedia 🐍📚</h1>
-```
 Python is renowned for its extensive library ecosystem, but navigating through the vast array of libraries can be a daunting task. That's where PyLibLog comes to your rescue. We've created a one-stop destination for Python developers, learners, and enthusiasts to explore, understand, and leverage Python libraries effectively.
-```
-"Teaching and sharing information about Python libraries through blog posts. These blogs include explanations, definitions, examples, and what happens when you use them."
+Teaching and sharing information about Python libraries through blog posts. These blogs include explanations, definitions, examples, and what happens when you use them.
 </br>
 
 ## Technology Stack
