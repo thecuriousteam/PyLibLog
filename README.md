@@ -8,6 +8,14 @@ Teaching and sharing information about Python libraries through blog posts. Thes
 2. Framework - ReactJs
 3. DevOps Technology
 
+### Core Team Developers
+1. Kumbhaj Shukla
+2. Nandan G N
+3. Shreya Sureka
+4. Kajal Lanjhiyana
+5. Kumari Ranjana Yada🇻
+6. Sravani 
+
 <h2 align = "center">Git Commands</h2>
 
 1. git flow -h (gives the list of sub commands)
@@ -28,13 +36,7 @@ Teaching and sharing information about Python libraries through blog posts. Thes
 9.  git flow release start 1.2.1
 10. git flow release finish –kn <1.1.1>
 
-### Core Team Developers
-1. Kumbhaj Shukla
-2. Nandan G N
-3. Shreya Sureka
-4. Kajal Lanjhiyana
-5. Kumari Ranjana Yada🇻
-6. Sravani
+
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
 </a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
