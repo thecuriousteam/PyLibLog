@@ -35,3 +35,28 @@ body{
     background: radial-gradient(circle at center, 
     rgb(10, 12, 12), rgb(36, 36, 36), rgb(210, 7, 173)),100% ;
 }
+/* body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+} */
+
+.sidebar {
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    background-color: rgb(86, 1, 99);
+   
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color:#fff;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
