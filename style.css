@@ -1,8 +1,8 @@
 body{
     /* background-image: url(cherry.PNG); */
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(60, 17, 218);
     background: radial-gradient(circle at center, 
-    rgb(10, 12, 12), rgb(36, 36, 36), rgb(210, 7, 173)),100% ;
+    rgb(10, 12, 12), rgb(36, 36, 36), rgb(103, 8, 245)),100% ;
 }
 .container{
     height: 100vw;
@@ -20,7 +20,7 @@ body{
     height: 100%;
     border: 0.1px solid grey;
     overflow: auto;
-    background: rgb(86, 1, 99);
+    background: rgb(42, 1, 99);
     padding: 3px;
 
 }
@@ -45,7 +45,7 @@ body{
     width: 200px;
     background-color: #f1f1f1;
     padding: 15px;
-    background-color: rgb(86, 1, 99);
+    background-color: rgb(48, 5, 108);
    
 }
 
