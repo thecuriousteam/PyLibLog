@@ -54,8 +54,8 @@
       
       <!-- Middle Section -->
 
-      <div class = "container">
-      <div class = "scrollbar-link">
+      <div class = "container" style= "display: flex;">
+      <!-- <div class = "scrollbar-link">
         <a href = #home id="aa">Home</a>
         <a href = #about id = "aa">About</a>
         <a href = #contact id = "aa">Contact</a>
@@ -69,10 +69,34 @@
         <a href = #about id = "aa">About</a>
         <a href = #contact id = "aa">Contact</a>
       </div>
+      <div id = "aa">Hello</div>
+      <div id = "about">About</div>
+      <div id = "contact">Contact</div> -->
+      <div class="sidebar scrollbar-link">
+        <a href="#" onclick="showContent('home')">Home</a>
+        <a href="#" onclick="showContent('about')">About</a>
+        <a href="#" onclick="showContent('contact')">Contact</a>
     </div>
+    <div class="content" id="content">
+        Content will appear here.
+    </div>
+    </div>
+
+   
       <!-- footer -->
       <p align="center">© Copyright, Curious Ecosystem</p>
-
+<script>
+  function showContent(content) {
+    var contentDiv = document.getElementById('content');
+    if (content === 'home') {
+        contentDiv.innerText = 'Home';
+    } else if (content === 'about') {
+        contentDiv.innerText = 'About';
+    } else if (content === 'contact') {
+        contentDiv.innerText = 'Contact';
+    }
+}
+</script>
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
