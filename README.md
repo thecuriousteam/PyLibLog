@@ -3,10 +3,12 @@ Python is renowned for its extensive library ecosystem, but navigating through t
 Teaching and sharing information about Python libraries through blog posts. These blogs include explanations, definitions, examples, and what happens when you use them.
 </br>
 
-## Technology Stack
-1. Basic HTML, CSS, JS
-2. Framework - ReactJs
-3. DevOps Technology
+<h1 align = "center"> Technology Stack </h1>
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,html,css,react" />
+  </a>
+</p>
 
 
 <h2 align = "center">Git Commands</h2>
