@@ -8,13 +8,6 @@ Teaching and sharing information about Python libraries through blog posts. Thes
 2. Framework - ReactJs
 3. DevOps Technology
 
-### Core Team Developers
-1. Kumbhaj Shukla
-2. Nandan G N
-3. Shreya Sureka
-4. Kajal Lanjhiyana
-5. Kumari Ranjana Yada🇻
-6. Sravani 
 
 <h2 align = "center">Git Commands</h2>
 
