@@ -29,16 +29,29 @@
 //     }
 // }
 
+
+
 function showContent(contentFileName) {
     var contentDiv = document.getElementById('content');
+    var loader = document.querySelector('.progress'); 
+
+    loader.style.display = 'block';
+    contentDiv.style.display = 'none';
+
     var xhr = new XMLHttpRequest();
-    
-    xhr.onreadystatechange = function() {
+
+    xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             contentDiv.innerHTML = xhr.responseText;
+
+            setTimeout(function () {
+                loader.style.display = 'none';
+                contentDiv.style.display = 'block'; 
+            }, 1000); 
         }
     };
-    
+
     xhr.open('GET', contentFileName, true);
     xhr.send();
 }
+
