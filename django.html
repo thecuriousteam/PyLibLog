@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django</title>
+</head>
+<body>
+    <div class="header">
+        <h2>DJANGO</h2>
+      </div>
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>BLOG 1</h2>
+            <h5>Getting Started with Django: Installation and Your First Project</h5>
+            <div class="fakeimg" style="height:200px;"><img src="djangoblog1.png" style="height: 170px;"> </div>
+            <p>
+                Introduction:
+                Django is a popular web framework for building web applications rapidly and efficiently. In this blog, we will walk you through the process of installing Django and creating your first project. We'll provide explanations, definitions, examples, and highlight what happens when you use Django for web development.
+                
+                Step 1:<p style="font-weight: bold;">Installation</p>
+                To start your Django journey, you first need to install it on your system. Django is a Python web framework, so make sure you have Python installed (preferably Python 3.6 or later). Here are the steps to install Django using Python's package manager, pip:
+                <hr>
+                Explanation:
+                Pip is a package manager for Python that simplifies the process of installing, updating, and managing Python packages, including Django.
+                Step 2: <p style="font-weight: bold;">Creating a Virtual Environment</p>
+                Before creating your first Django project, it's a good practice to set up a virtual environment. A virtual environment is an isolated Python environment that allows you to manage project-specific dependencies.
+                Explanation:
+                A virtual environment helps prevent conflicts between packages in different projects, ensuring that your project has its own isolated set of dependencies.
+                <hr>
+                Step 3: <p style="font-weight: bold;">Creating Your First Django Project</p>
+                Now that you have Django installed and a virtual environment set up, you can create your first Django project. To create a new project, use the following command:
+                <p style="font-weight: bold;">"django-admin startproject myproject"</p>
+                <p style="font-weight: bold;">Explanation:</p>
+                •	<b>django-admin</b> is a command-line utility that comes with Django and allows you to perform various tasks, including starting new projects.
+                   •	<b>startproject</b> is a subcommand that tells Django to create a new project with the specified name (in this case, "myproject").
+                Example:
+                Suppose you run the above command. You will now have a directory called myproject containing the initial project structure and configuration files.
+                What Happens When You Use Django:
+                1.	Project Structure: Django sets up a directory structure for your project, with important files and directories for various components of your web application.
+                2.	Settings: Inside the project directory, you'll find a settings.py file. This is where you configure your project settings, such as database connection, installed apps, and middleware.
+                3.	Development Server: You can start a development server with the following command:
+    
+                <p style="font-weight: bold;">python manage.py runserver</p>
+                This command will launch a local development server, and you can access your project at http://localhost:8000/ in your web browser.
+                4.	Admin Interface: Django comes with a built-in admin interface that you can use to manage your application's data. You can access it at http://localhost:8000/admin/.
+                Conclusion:
+                Congratulations! You've successfully installed Django, created your first project, and seen what happens when you start working with Django. In upcoming blogs, we'll delve deeper into Django's features, create models, views, and templates, and build a functional web application. Stay tuned for more Django tutorials!
+                </p>
+          </div>
+
+          <!--<div class="card">
+            <h2>BLOG2</h2>
+            <h5>TEMPLATES</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>......</p>
+          </div>-->
+        </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <h2>Thankyou</h2>
+      </div>
+</body>
+</html>
+
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+    /* background-image: url(cherry.PNG); */
+    background-color: rgb(60, 17, 218);
+    background: radial-gradient(circle at center, 
+    rgb(10, 12, 12), rgb(36, 36, 36), rgb(103, 8, 245)),100% ;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
