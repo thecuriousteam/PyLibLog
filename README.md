@@ -72,6 +72,7 @@ If you have an idea for an enhancement, we welcome your input. Before creating a
 Feel free to pick any open issue from our [issue tracker](https://github.com/thecuriousteam/PyLibLog/issues) that you find interesting. Comment on the issue that you would like to work on so that others are aware you are addressing it. If you need more context on a particular issue, please ask for clarification.
 
 ## Git Commands
+You can also refer to this [Article](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) 
 
 1. git flow -h (gives the list of sub commands)
 2. git flow init (initializes the repository)
