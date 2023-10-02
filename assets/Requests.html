@@ -56,5 +56,89 @@
     </div>
     </body>
     </html>
+    <h1>Python 'requests' Module for Beginners</h1>
+
+<p>The 'requests' module in Python allows you to send HTTP requests to web services and retrieve data from websites.</p>
+
+<h2>Installation</h2>
+<p>You can install the 'requests' module using pip:</p>
+
+<pre>
+pip install requests
+</pre>
+
+<h2>Basic Usage</h2>
+<p>To send a GET request and retrieve content from a website:</p>
+
+<pre>
+import requests
+
+response = requests.get('https://www.example.com')
+print(response.text)
+</pre>
+
+<p>Here, we import the 'requests' module, send a GET request to 'https://www.example.com', and print the response content.</p>
+
+<h2>HTTP Methods</h2>
+<p>The 'requests' module supports various HTTP methods:</p>
+
+<ul>
+    <li>GET: Retrieve data from a server.</li>
+    <li>POST: Send data to a server.</li>
+    <li>PUT: Update data on a server.</li>
+    <li>DELETE: Remove data from a server.</li>
+    <!-- Add more methods as needed -->
+</ul>
+
+<h2>Handling Response</h2>
+<p>You can access response data using the 'response' object:</p>
+
+<pre>
+import requests
+
+response = requests.get('https://www.example.com')
+
+# Status code
+print(response.status_code)
+
+# Response content
+print(response.text)
+
+# Headers
+print(response.headers)
+</pre>
+
+<p>The 'status_code' attribute contains the HTTP status code, 'text' contains the response content, and 'headers' contains the HTTP headers.</p>
+
+<h2>Headers and Parameters</h2>
+<p>You can set custom headers and parameters in your requests:</p>
+
+<pre>
+import requests
+
+headers = {'User-Agent': 'My User Agent'}
+params = {'key': 'value'}
+
+response = requests.get('https://www.example.com', headers=headers, params=params)
+</pre>
+
+<h2>Error Handling</h2>
+<p>You should handle exceptions when making requests:</p>
+
+<pre>
+import requests
+
+try:
+    response = requests.get('https://www.example.com')
+    response.raise_for_status()  # Raise an exception for HTTP errors
+except requests.exceptions.HTTPError as err:
+    print(f"HTTP error: {err}")
+except requests.exceptions.RequestException as err:
+    print(f"Request error: {err}")
+</pre>
+
+<h2>Conclusion</h2>
+<p>The 'requests' module is a powerful tool for working with HTTP requests in Python. It allows you to interact with web services, retrieve data, and handle various aspects of HTTP communication.</p>
+
 </body>
 </html>
