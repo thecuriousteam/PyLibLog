@@ -30,6 +30,9 @@ Teaching and sharing information about Python libraries through blog posts. Thes
 9.  git flow release start 1.2.1
 10. git flow release finish –kn <1.1.1>
 
+🔗 **Team Onboarding:**
+- Developers needs to onboard to opensource community for easy information flow along with admins, please join with this link  [Curious Developers Community - Hacktoberfest ](https://chat.whatsapp.com/HNu3VaLPK3z3yt3JFUs7D7)</br>
+
 🔗 **Resources:**
 - Hacktoberfest Official Website: [https://hacktoberfest.digitalocean.com/](https://hacktoberfest.digitalocean.com/)</br>
 - GitHub Hacktoberfest Guide: [https://github.com/firstcontributions/first-contributions](https://github.com/firstcontributions/first-contributions)</br>
