@@ -10,9 +10,27 @@
       rel="stylesheet"
     />
   </head>
+  <style>
+    nav.sticky{
+      
+    position: fixed; 
+     top: 0; 
+    width: 100%; 
+  }
+    
+    .sticky {
+    position: fixed; 
+     top: 0; 
+    width: 100%; 
+  }
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  </style>
   <body class="bg-gray-100 font-sans">
     <!-- Navigation Bar -->
-    <nav class="bg-blue-900 p-4 text-white">
+    <nav class="bg-blue-900 p-4 text-white" id="navbar">
       <div class="container mx-auto flex justify-between items-center">
         <a href="../index.html" class="text-2xl font-semibold">Home</a>
       </div>
@@ -161,5 +179,24 @@
         </div>
       </div>
     </div>
+    <script>
+      // sticky navbar
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    </script>
   </body>
 </html>
