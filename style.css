@@ -70,7 +70,7 @@ body{
 
 .sidebar a:hover{
     
-    color:chartreuse;
+    color:rgb(105, 198, 13);
     display: block;
     background: #555;
     /* box-shadow: crimson; */
