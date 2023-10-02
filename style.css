@@ -56,7 +56,18 @@ body{
     color:#fff;
 }
 
+
+  nav a:hover {
+    border-bottom: 4px solid rgb(222, 22, 22);
+    /* border-bottom: 4px solid rgb(255, 255, 255); */
+    padding: 6px 0; 
+   
+  }
 .content {
     flex: 1;
     padding: 20px;
+}
+
+ a:hover{
+    color:chartreuse;
 }
