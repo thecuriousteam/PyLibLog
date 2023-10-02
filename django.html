@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Django</title>
 </head>
 <body>
+  <!--nav bar-->
+  
+
+    <!--header-->
     <div class="header">
         <h2>DJANGO</h2>
       </div>
@@ -14,48 +19,61 @@
           <div class="card">
             <h2>BLOG 1</h2>
             <h5>Getting Started with Django: Installation and Your First Project</h5>
-            <div class="fakeimg" style="height:200px;"><img src="djangoblog1.png" style="height: 170px;"> </div>
             <p>
-                Introduction:
-                Django is a popular web framework for building web applications rapidly and efficiently. In this blog, we will walk you through the process of installing Django and creating your first project. We'll provide explanations, definitions, examples, and highlight what happens when you use Django for web development.
-                
-                Step 1:<p style="font-weight: bold;">Installation</p>
-                To start your Django journey, you first need to install it on your system. Django is a Python web framework, so make sure you have Python installed (preferably Python 3.6 or later). Here are the steps to install Django using Python's package manager, pip:
-                <hr>
-                Explanation:
-                Pip is a package manager for Python that simplifies the process of installing, updating, and managing Python packages, including Django.
-                Step 2: <p style="font-weight: bold;">Creating a Virtual Environment</p>
-                Before creating your first Django project, it's a good practice to set up a virtual environment. A virtual environment is an isolated Python environment that allows you to manage project-specific dependencies.
-                Explanation:
-                A virtual environment helps prevent conflicts between packages in different projects, ensuring that your project has its own isolated set of dependencies.
-                <hr>
-                Step 3: <p style="font-weight: bold;">Creating Your First Django Project</p>
-                Now that you have Django installed and a virtual environment set up, you can create your first Django project. To create a new project, use the following command:
-                <p style="font-weight: bold;">"django-admin startproject myproject"</p>
-                <p style="font-weight: bold;">Explanation:</p>
-                •	<b>django-admin</b> is a command-line utility that comes with Django and allows you to perform various tasks, including starting new projects.
-                   •	<b>startproject</b> is a subcommand that tells Django to create a new project with the specified name (in this case, "myproject").
-                Example:
-                Suppose you run the above command. You will now have a directory called myproject containing the initial project structure and configuration files.
-                What Happens When You Use Django:
-                1.	Project Structure: Django sets up a directory structure for your project, with important files and directories for various components of your web application.
-                2.	Settings: Inside the project directory, you'll find a settings.py file. This is where you configure your project settings, such as database connection, installed apps, and middleware.
-                3.	Development Server: You can start a development server with the following command:
-    
-                <p style="font-weight: bold;">python manage.py runserver</p>
-                This command will launch a local development server, and you can access your project at http://localhost:8000/ in your web browser.
-                4.	Admin Interface: Django comes with a built-in admin interface that you can use to manage your application's data. You can access it at http://localhost:8000/admin/.
-                Conclusion:
-                Congratulations! You've successfully installed Django, created your first project, and seen what happens when you start working with Django. In upcoming blogs, we'll delve deeper into Django's features, create models, views, and templates, and build a functional web application. Stay tuned for more Django tutorials!
+              Introduction:
+              Django is a popular web framework for building web applications rapidly and efficiently. In this blog, we will walk you through the process of installing Django and creating your first project. We'll provide explanations, definitions, examples, and highlight what happens when you use Django for web development.
+              I'll include instructions for creating your first website with Django, along with a simple demo.
+             </p>
+             <p>Here's a combined set of instructions you can use in a single shell to install Django and create your first project</p>
+            <p align ="center"><img src="djangoblog1.png" style="height: 400px;"></p>
+           
+               <p><b>Creating Your First Website with Django:</b>
+                Now, let's add the instructions for creating your first website with Django, including a simple demo:</p>
+                <p>
+                  <b>1.Create a Django App:</b>
+                  A Django app is a self-contained component of your project. We'll create a "website" app.
                 </p>
+                <img src="images\django1.png">
+                <p>
+                  <b>2.Define a View:</b>
+                  In Django, views handle user requests and return responses.In website/views.py, add a simple view function:
+                </p>
+                <img src="images\django2.png">
+                <p>
+                  <b>3.Create a URL Mapping:</b>
+                   URLs are mapped to views. We'll create a URL route that points to our "hello" view. In website/urls.py, define the URL pattern:
+                </p>
+                <img src="images\django3.png">
+                <p>
+                  <b>4.Include the App URLs in the Project URLs</b>
+                  You need to include your app's URLs in the project's urls.py to make them accessible.In myproject/urls.py, include the website app's URLs:
+                </p>
+                <img src="images\django4.png">
+                <p>
+                  <b>5.Run Migrations:</b>
+                  You should apply migrations to create the necessary database tables.
+                </p>
+                <img src="images\django5.png">
+                <p>
+                  <b>6.Start the Development Server:</b>
+                  Start the development server to test your website.
+                </p>
+                <img src="images\django6.png">
+                <p>
+                  <b>7.Visit Your Website:</b>
+                  Open a web browser and visit http://localhost:8000/website/hello/ to see your "Hello, Django!" message.
+                </p>
+                
+                <p>Congratulations! You've created your first website with Django, complete with a simple "Hello, Django!" message. You can now build upon this foundation to create more complex web applications.</p>
+
           </div>
 
-          <!--<div class="card">
+          <div class="card">
             <h2>BLOG2</h2>
             <h5>TEMPLATES</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
+            
             <p>......</p>
-          </div>-->
+          </div>
         </div>
         </div>
       </div>
@@ -83,8 +101,8 @@ body {
 
 /* Header/Blog Title */
 .header {
-  padding: 30px;
-  font-size: 40px;
+  padding: 10px;
+  font-size: 20px;
   text-align: center;
   background: white;
 }
@@ -96,23 +114,17 @@ body {
   width: 100%;
 }
 
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
 
 /* Fake image */
 .fakeimg {
-  background-color: #aaa;
-  width: 100%;
+  background-color: white;
+  width: 50%;
   padding: 20px;
 }
 
 /* Add a card effect for articles */
 .card {
-  background-color: white;
+  background-color: gainsboro;
   padding: 20px;
   margin-top: 20px;
 }
@@ -128,9 +140,10 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: white;
   margin-top: 20px;
 }
+
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
