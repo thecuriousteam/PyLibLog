@@ -1,0 +1,3 @@
+:root{--dark-glow-url: url("/images/modules/pulls/drafts_upgrade_dialog/dark-mode-glow.png");--light-glow-url: url("/images/modules/pulls/drafts_upgrade_dialog/light-mode-glow.png")}.drafts-upgrade-dialog-hero{background-size:cover}.drafts-upgrade-dialog-hero[data-color-mode=light]{background-image:var(--light-glow-url)}.drafts-upgrade-dialog-hero[data-color-mode=dark]{background-image:var(--dark-glow-url)}@media(prefers-color-scheme: light){.drafts-upgrade-dialog-hero{background-image:var(--light-glow-url)}}@media(prefers-color-scheme: dark){.drafts-upgrade-dialog-hero{background-image:var(--dark-glow-url)}}
+
+/*# sourceMappingURL=drafts-upgrade-dialog-component-9e5955da99bc.css.map*/
