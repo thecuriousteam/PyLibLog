@@ -48,7 +48,9 @@ body{
     background-color: rgb(48, 5, 108);
    
 }
-
+#rare a:hover{
+    color:rgb(135, 176, 239);
+}
 .sidebar a {
     display: block;
     margin-bottom: 10px;
