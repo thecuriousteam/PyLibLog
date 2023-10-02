@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <!-- <script src = "logic.js"></script> -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
     <!--[if lt IE 9]>
@@ -73,34 +74,39 @@
       <div id = "about">About</div>
       <div id = "contact">Contact</div> -->
       <div class="sidebar scrollbar-link">
-        <a href="#" onclick="showContent('Beautiful Soup')">Beautiful Soup</a>
-        <a href="#" onclick="showContent('Django')">Django</a>
-        <a href="#" onclick="showContent('Flask')">Flask</a>
-        <a href="#" onclick="showContent('Keras')">Keras</a>
-        <a href="#" onclick="showContent('Matplotlib')">Matplotlib</a>
-        <a href="#" onclick="showContent('Numpy')">Numpy</a>
-        <a href="#" onclick="showContent('Pandas')">Pandas</a>
-        <a href="#" onclick="showContent('Requests')">Requests</a>
-        <a href="#" onclick="showContent('Scikit-learn')">Scikit-learn</a>
-        <a href="#" onclick="showContent('Tensorflow')">Tensorflow</a>
+        <a href="#" onclick="showContent('assests/BeautifulSoup.html')">Beautiful Soup</a>
+        <a href="#" onclick="showContent('Django.html')">Django</a>
+        <a href="#" onclick="showContent('Flask.html')">Flask</a>
+        <a href="#" onclick="showContent('Keras.html')">Keras</a>
+        <a href="#" onclick="showContent('Matplotlib.html')">Matplotlib</a>
+        <a href="#" onclick="showContent('Numpy.html')">Numpy</a>
+        <a href="#" onclick="showContent('Pandas.html')">Pandas</a>
+        <a href="#" onclick="showContent('Requests.html')">Requests</a>
+        <a href="#" onclick="showContent('ScikitLearn.html')">Scikit-learn</a>
+        <a href="#" onclick="showContent('Tensorflow.html')">Tensorflow</a>
     </div>
     <div class="content" id="content">
         Home
     </div>
     </div>
+    <script>
+      function showContent(contentFileName) {
+          var contentDiv = document.getElementById('content');
+          var xhr = new XMLHttpRequest();
+          
+          xhr.onreadystatechange = function() {
+              if (xhr.readyState === 4 && xhr.status === 200) {
+                  contentDiv.innerHTML = xhr.responseText;
+              }
+          };
+          
+          xhr.open('GET', contentFileName, true);
+          xhr.send();
+      }
+  </script>
       <!-- footer -->
       <p align="center">© Copyright, Curious Ecosystem</p>
-<script>
-  function showContent(content) {
-    var contentDiv = document.getElementById('content');
-    if (content === 'home') {
-        contentDiv.innerText = 'Home';
-    } else if (content === 'about') {
-        contentDiv.innerText = 'About';
-    } else if (content === 'contact') {
-        contentDiv.innerText = 'Contact';
-    }
-}
+
 </script>
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
