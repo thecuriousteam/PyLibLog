@@ -70,10 +70,9 @@ body{
 
 .sidebar a:hover{
     
-    color:rgb(105, 198, 13);
+    color:rgb(124, 236, 11);
     display: block;
     background: #555;
-    /* box-shadow: crimson; */
-   /* box-shadow: inset; */
+  
     border-bottom: 4px solid rgb(222, 22, 22);
 }
