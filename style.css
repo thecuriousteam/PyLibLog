@@ -68,6 +68,12 @@ body{
     padding: 20px;
 }
 
- a:hover{
+.sidebar a:hover{
+    
     color:chartreuse;
+    display: block;
+    background: #555;
+    /* box-shadow: crimson; */
+   /* box-shadow: inset; */
+    border-bottom: 4px solid rgb(222, 22, 22);
 }
