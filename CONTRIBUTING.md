@@ -13,8 +13,12 @@ Before you start contributing, please take a moment to read the following guidel
 
 ## Table of Contents
 
-1. [Getting Started](#getting-started)
-2. [How Can I Contribute?](#how-can-i-contribute)
+- [Contributing Guidelines](#contributing-guidelines)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+  - [Standard Design Protocol](#standard-design-protocol)
+  - [How Can I Contribute?](#how-can-i-contribute)
+    - [Team Onboarding](#team-onboarding)
     - [Reporting Bugs](#reporting-bugs)
     - [Suggesting Enhancements](#suggesting-enhancements)
     - [Working on Issues](#working-on-issues)
@@ -27,7 +31,25 @@ Before you start contributing, please take a moment to read the following guidel
 - Clone your forked repository locally: `git clone https://github.com/thecuriousteam/PyLibLog.git`
 - Change your directory to the project: `cd PyLibLog`
 
+
+## Standard Design Protocol
+1. Font & Color Code
+   1. Headings H1 - #8800ff
+   2. Heading H2 to H6 and body, Paragraph - #000000
+   3. Heading Font - https://fonts.google.com/specimen/Poppins
+   4. Body Font Body -  https://fonts.google.com/specimen/Source+Serif+4
+   5. Font Size - https://medium.com/eightshapes-llc/typography-in-design-systems-6ed771432f1e
+   6. Standrad Website Design reference
+      1. https://dart-tutorial.com/
+      2. https://www.w3schools.com/html/
+      3. https://www.studytonight.com/html5-references/html-a-tag
+
+    ![Size Structure ](https://miro.medium.com/v2/resize:fit:828/format:webp/1*2av-i7NsHMvkhkyElFHQxg.png)
+
 ## How Can I Contribute?
+
+### Team Onboarding
+- Developers needs to onboard to opensource community for easy information flow along with admins, please join with this link  [Curious Developers Community - Hacktoberfest ](https://chat.whatsapp.com/HNu3VaLPK3z3yt3JFUs7D7)</br>
 
 ### Reporting Bugs
 
