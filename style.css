@@ -69,9 +69,8 @@ body{
 }
 
 .sidebar a:hover{
-    
     color:rgb(124, 236, 11);
     display: block;
     background: #6e6e6e;
-    border-bottom: 4px solid rgb(222, 22, 22);
+    border-bottom: 4px solid rgb(222, 14, 14);
 }
