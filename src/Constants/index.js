@@ -7,55 +7,30 @@ export const subMenusList = [
       {
         title: "Introduction to Python",
         name: "Introduction-to-Python",
-        path: "/Introduction-to-Python",
-      },
-      {
-        title: "Basic Python Program",
-        name: "Basic-Python-Program",
-        path: "/Basic-Python-Program",
-      },
-      {
-        title: "Variables in Python",
-        name: "Variables-in-Python",
-        path: "/Variables-in-Python",
-      },
+        
+      }
     ],
   },
   {
-    name: "Conditions-and-Loops",
-    title: "2. Conditions and Loops",
+    name: "NumPy-Library",
+    title: "2. NumPy",
     children: [
       {
-        title: "Introduction to Conditions",
-        name: "Introduction-to-Conditions",
-        path: "/Introduction-to-Conditions",
-      },
-      {
-        title: "Loops in Python",
-        name: "Loops-in-Python",
-        path: "/Loops-in-Python",
-      },
-      {
-        title: "While Loop in Python",
-        name: "While-Loop-in-Python",
-        path: "/While-Loop-in-Python",
-      },
+        // List of Pages 
+        title: "Intro-to-Numpy", 
+        name: "Intro-to-Numpy",
+        
+      }
     ],
   },
   {
-    name: "Functions",
-    title: "3. Functions",
+    name: "Pandas-Library",
+    title: "3. Intro to Pandas",
     children: [
       {
-        title: "Inbuilt Functions",
-        name: "Inbuilt-Functions",
-        path: "/Inbuilt-Functions",
-      },
-      {
-        title: "User defined Functions",
-        name: "User-defined-Functions",
-        path: "/User-defined-Functions",
-      },
+        title: "Intro-to-pandas",
+        name: "Intro-to-pandas",
+      }
     ],
   },
   /* remaining contents*/

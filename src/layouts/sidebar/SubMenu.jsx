@@ -11,7 +11,6 @@ const SubMenu = ({ data }) => {
   // })
   return (
     <>
-    <NavLink to = {data.name}>
     <li
         className={`link ${pathname.includes(data.name) && "text-blue-600"}`}
         onClick={() => setSubMenuOpen(!subMenuOpen)}
@@ -22,7 +21,6 @@ const SubMenu = ({ data }) => {
         
         />
       </li>
-    </NavLink>
       
       <motion.ul
         animate={
@@ -51,7 +49,6 @@ const SubMenu = ({ data }) => {
   </li>
 
 ))}
-
       </motion.ul>
     </>
   );
