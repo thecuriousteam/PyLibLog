@@ -80,7 +80,7 @@ You can also refer to this [Article](https://www.atlassian.com/git/tutorials/com
 4. git flow feature list (gives list of feature branches)
    - git flow feature start featureName (to create a feature branch)
    -  git branch (shows the list of branches)
-   - get flow feature list (gives list of feature branches)
+   - git flow feature list (gives list of feature branches)
    -  git status (shows the list of changes made)
    - git add . (to add all the changes at once)
    - git commit -m "Commit message" (to commit the changes)
@@ -107,6 +107,13 @@ You can also refer to this [Article](https://www.atlassian.com/git/tutorials/com
   - [React JS](https://drive.google.com/drive/folders/1G0TJMZ4P-UAiwSG0ijgkND-gkEOB95-I?usp=drive_link)
 - Hacktoberfest Official Website: [https://hacktoberfest.digitalocean.com/](https://hacktoberfest.digitalocean.com/)</br>
 - GitHub Hacktoberfest Guide: [https://github.com/firstcontributions/first-contributions](https://github.com/firstcontributions/first-contributions)</br>
+
+### Updates
+**Date -** 03/10/2023
+1. We are extending the technology based on the developers discussion
+2. Technology Stack
+   1. Basic HTML, CSS, JS
+   2. ReactJS, Tailwind CSS, React Router
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
 </a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
