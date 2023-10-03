@@ -5,7 +5,7 @@ body{
     rgb(10, 12, 12), rgb(36, 36, 36), rgb(103, 8, 245)),100% ;
 }
 .container{
-    height: 100vw;
+    /* height: 100vw; */
     width: 80vw;
     background-color: rgb(248, 248, 250);
     resize: vertical;
@@ -16,10 +16,11 @@ body{
 }
 
 .scrollbar-link{
+    position: fixed;
     width: 15%;
     height: 100%;
     border: 0.1px solid grey;
-    overflow: auto;
+    overflow: hidden;
     background: rgb(42, 1, 99);
     padding: 3px;
 
@@ -43,9 +44,10 @@ body{
 
 .sidebar {
     width: 200px;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     padding: 15px;
     background-color: rgb(48, 5, 108);
+    border-radius: 9px;
    
 }
 
@@ -55,8 +57,40 @@ body{
     text-decoration: none;
     color:#fff;
 }
+.sidebar a:hover {
+    color: rgb(219, 219, 159);
+    text-decoration: underline;
+}
 
 .content {
     flex: 1;
     padding: 20px;
+    background-color: rgb(248, 248, 250);
+    resize: vertical;
+    box-shadow: 0 5px 10px rgb(246, 245, 245);
+}
+
+
+.flask-content h1{
+    color: rgb(48, 5, 108);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.flask-content h3{
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+.flask-content {
+    margin: 2rem;
+    padding-left: 200px;
+    background-color: rgb(248, 248, 250);
+    box-shadow: 0 5px 10px rgb(246, 245, 245);
+    border-radius: 10px;
+    
+}
+
+.flask-card {
+    border-radius: 10px;
 }
