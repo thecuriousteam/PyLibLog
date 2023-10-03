@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Serif+4:opsz,wght@8..60,300&display=swap');
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Container Styles */
+.container {
+    max-width: 100%; /* Ensure content fits within the viewport */
+    margin-left: -20px; /* Center align the container horizontally */
+    padding: 10px; /* Reduced padding */
+    
+}
+
+.main-heading {
+    color: #8800ff;
+    font-size: 20px; /* Reduced font size */
+    margin-bottom: 5px; /* Reduced spacing */
+    text-align: center;
+}
+
+.sub-heading {
+    font-family: 'Source Serif 4', serif;
+    font-size: 18px; /* Reduced font size */
+    font-weight: bolder;
+    margin-bottom: 3px; /* Reduced spacing */
+    color: #000000;
+}
+
+.unordered-list {
+    list-style-type: circle;
+    margin-left: 0;
+    padding-left: 15px; /* Slightly reduced left padding */
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.unordered-list li {
+    font-weight: lighter;
+    color: #000000;
+    font-size: 12px; /* Reduced font size */
+    overflow-wrap: break-word; /* Allow text to wrap */
+    text-align: left;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .main-heading {
+        font-size: 16px; /* Further reduced font size for smaller screens */
+        margin-bottom: 3px; /* Adjusted spacing */
+    }
+
+    .sub-heading {
+        font-size: 14px; /* Further reduced font size for smaller screens */
+        margin-bottom: 3px; /* Adjusted spacing */
+    }
+
+    .unordered-list li {
+        font-size: 10px; /* Further reduced font size for smaller screens */
+        margin-bottom: 3px; /* Adjusted spacing */
+    }
+
+    .container p {
+        font-size: 10px; /* Reduced font size for paragraphs */
+        margin-bottom: 3px; /* Adjusted spacing */
+        overflow-wrap: break-word; /* Allow text to wrap */
+        text-align: left;
+    }
+
+    /* Reduce the video iframe size */
+    .video-container iframe {
+        width: 100%; /* Make it full width of container */
+        height: auto; /* Automatically adjust the height */
+    }
+}
