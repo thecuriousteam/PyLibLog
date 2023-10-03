@@ -36,7 +36,7 @@ Before you start contributing, please take a moment to read the following guidel
 
 - Ensure you have an IDE installed on your local machine.
 - Fork the repository on GitHub.
-- Clone your forked repository locally: `git clone https://github.com/thecuriousteam/PyLibLog.git`
+- Clone your forked repository locally: `git clone https://github.com/<your_username>/PyLibLog.git`
 - Change your directory to the project: `cd PyLibLog`
 
 
