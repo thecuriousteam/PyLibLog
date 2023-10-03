@@ -1,116 +1,262 @@
+New one 
+
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PyLibLog</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <!-- <script src = "logic.js"></script> -->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- Leave those next 4 lines if you care about users using IE8 -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    </head>
-    <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">PyLibLog</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-      
-      <!-- Middle Section -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Curious Developers PyLibLog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI/t1i9f1eR0kCcHag4F50dh5E6I0l1r1U8fZ49M=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-      <div class = "container" style= "display: flex;">
-      <!-- <div class = "scrollbar-link">
-        <a href = #home id="aa">Home</a>
-        <a href = #about id = "aa">About</a>
-        <a href = #contact id = "aa">Contact</a>
-        <a href = #home id="aa">Home</a>
-        <a href = #about id = "aa">About</a>
-        <a href = #contact id = "aa">Contact</a>
-        <a href = #home id="aa">Home</a>
-        <a href = #about id = "aa">About</a>
-        <a href = #contact id = "aa">Contact</a>
-        <a href = #home id="aa">Home</a>
-        <a href = #about id = "aa">About</a>
-        <a href = #contact id = "aa">Contact</a>
-      </div>
-      <div id = "aa">Hello</div>
-      <div id = "about">About</div>
-      <div id = "contact">Contact</div> -->
-      <div class="sidebar scrollbar-link">
-        <a href="#" onclick="showContent('assets/BeautifulSoup.html')">Beautiful Soup</a>
-        <a href="django.html" onclick="showContent('assets/Django.html')">Django</a>
-        <a href="#" onclick="showContent('assets/Flask.html')">Flask</a>
-        <a href="#" onclick="showContent('assets/Keras.html')">Keras</a>
-        <a href="#" onclick="showContent('assets/Matplotlib.html')">Matplotlib</a>
-        <a href="#" onclick="showContent('assets/Numpy.html')">Numpy</a>
-        <a href="#" onclick="showContent('assets/Pandas.html')">Pandas</a>
-        <a href="#" onclick="showContent('assets/Requests.html')">Requests</a>
-        <a href="#" onclick="showContent('assets/ScikitLearn.html')">Scikit-learn</a>
-        <a href="#" onclick="showContent('assets/Tensorflow.html')">Tensorflow</a>
-    </div>
-    <div class="content" id="content">
-        Home
-    </div>
-    </div>
-    <script>
-      function showContent(contentFileName) {
-          var contentDiv = document.getElementById('content');
-          var xhr = new XMLHttpRequest();
-          
-          xhr.onreadystatechange = function() {
-              if (xhr.readyState === 4 && xhr.status === 200) {
-                  contentDiv.innerHTML = xhr.responseText;
-              }
-          };
-          
-          xhr.open('GET', contentFileName, true);
-          xhr.send();
+    <style>
+
+      body {
+        overflow-y: auto;
+        background-color: #DBDBDA;
+        
       }
-  </script>
-      <!-- footer -->
-      <p align="center">© Copyright, Curious Ecosystem</p>
 
-</script>
-    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  
-  </body>
+        .sidebar {
+        width: 250px;
+        margin-left: 0;
+        padding: 25px;
+        height: 100%;
+        position: absolute; /* Use fixed position to make it always visible */
+        top: auto;
+        left: 0; /* Align it to the left of the viewport */
+        background-color: black;
+        color: white;
+        overflow-y: auto;
+        }
+      
+
+        h4 {
+            font-size: 20px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            color:#ef4d3f;
+            list-style: circle;
+            padding: 0;
+            margin: 0;
+        }
+
+        .content {
+            margin-left: 260px; 
+            padding: 30px;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            text-align: center;
+            text-shadow: #333;
+        }
+
+        .navbar {
+            background-color: #278cd9; 
+          
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 15px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #333;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+
+        h5 {
+            text-align: center;
+            color: #B85042;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .navbar-toggler {
+            padding: 5px 10px; 
+    }
+    .h1{
+        text-align: center;
+        font-size: medium;
+
+    }
+
+    .category-list.selected {
+        color: #007bff; /* Blue color */
+    }
+
+    select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    color: #000000;
+    }   
+
+    select option {
+    background-color: #000000;
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <h2>PyLibLog</h2>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://curiousdevelopers.in/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://linktr.ee/curiousdevelopers.community" target="_blank"> <img src="Linktree.png" alt="Linktree" width="100px"> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://curiousdevelopers.in/write-article/" target="_blank">Write Blog  <img src="write.png"  alt="Write Blog" width="25px"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container-fluid">
+        <!-- Sidebar Section -->
+        <div class="sidebar">
+
+          <h4 onclick="toggleContent('data-science')">Data Science and Machine Learning</h4>
+              <ul>NumPy</ul>
+              <ul>pandas</ul>
+              <ul>scikit-learn</ul>
+              <ul>TensorFlow and PyTorch</ul>
+              <ul>Matplotlib and Seaborn</ul>
+          
+            <br>
+
+            <h4 onclick="toggleContent('web-development')">Web Development</h4>
+                  <ul>Flask</ul>
+                  <ul>Django</ul>
+                  <ul>FastAPI</ul>
+            
+    
+              <br>
+    
+              <h4 onclick="toggleContent('nlp')">Natural Language Processing (NLP)</h4>
+                  <ul>NLTK</ul>
+                  <ul>spaCy</ul>
+                  <ul>gensim</ul>
+              
+              
+              <br>
+              
+                <h4 onclick="toggleContent('web-scraping')">Web Scraping</h4>
+              
+                  <ul>BeautifulSoup</ul>
+                  <ul>Scrapy</ul>
+              
+              
+              <br>
+              
+                <h4 onclick="toggleContent('testing')">Testing</h4>
+              
+                  <ul>pytest</ul>
+                  <ul>unittest</ul>
+              
+              
+              <br>
+              
+                <h4 onclick="toggleContent('database-interaction')">Database Interaction</h4>
+              
+                  <ul>SQLAlchemy</ul>
+                  <ul>pymongo</ul>
+             
+              
+              <br>
+              
+                <h4 onclick="toggleContent('gui')">GUI (Graphical User Interface)</h4>
+              
+                  <ul>Tkinter</ul>
+                  <ul>PyQt and PySide</ul>
+              
+              
+              <br>
+              
+                    <h4 onclick="toggleContent('network-programming')">Network Programming</h4>
+             
+                  <ul>requests</ul>
+                  <ul>socket</ul>
+             
+              
+              <br>
+              
+                  <h4 onclick="toggleContent('asynchronous-programming')">Asynchronous Programming</h4>
+             
+                  <ul>asyncio</ul>
+                  <ul>trio</ul>
+           
+              <br>
+              
+                  <h4 onclick="toggleContent('game-development')">Game Development</h4>
+        
+                  <ul>Pygame</ul>
+                  <ul>Pyglet</ul>
+                  <ul>Kivy</ul>
+           
+              
+              <br>
+              
+                  <h4 onclick="toggleContent('security')">Security</h4>
+      
+                  <ul>Scapy</ul>
+                  <ul>PyCrypto</ul>
+                  <ul>Paramiko</ul>
+              
+              <br>
+              
+              <h4 onclick="toggleContent('image-processing')">Image Processing</h4>
+             
+                  <ul>OpenCV</ul>
+                  <ul> Scikit-Image</ul>
+                    <ul> Pillow/PIL</ul>
+
+              <br>
+              
+              <h4 onclick="toggleContent('quantitative-finance')">Quantitative Finance</h4>
+          
+                  <ul>Quantlib</ul>
+                  <ul>statsmodels</ul>
+                  <ul>zipline</ul>
+         
+    
+              <br>
+
+        </div>
+
+        <!-- Content Area -->
+        <div class="content" id="content">
+            <!-- Content will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <h5>© Copyright, Curious Ecosystem</h5>
+    <br><br>
+
+
+</body>
 </html>
+
