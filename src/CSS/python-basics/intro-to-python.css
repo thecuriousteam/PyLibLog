@@ -15,7 +15,8 @@ body {
     max-width: 100%; /* Ensure content fits within the viewport */
     margin-left: -20px; /* Center align the container horizontally */
     padding: 10px; /* Reduced padding */
-    
+    max-height: max-content;
+    overflow-y: scroll;
 }
 
 .main-heading {
