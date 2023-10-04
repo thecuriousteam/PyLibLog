@@ -4,6 +4,8 @@ import AllApps from "./Python_Library_Pages/AllApps";
 
 import PythonBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-Python";
 import NumpyBasics from "./Python_Library_Pages/Numpy/Intro-to-Numpy";
+import PandasBasics from "./Python_Library_Pages/Pandas/Intro-to-Pandas";
+
 
 const App = () => {
   return (
@@ -22,7 +24,8 @@ const App = () => {
           <Route path="Loops-in-Python" element={<Six />} />
           <Route path="While-Loop-in-Python" element={<Seven />} /> */}
         </Route>
-        <Route path="/Functions" element={<Outlet />}>
+        <Route path="Pandas-Library" element={<Outlet />}>
+        <Route path="Intro-to-pandas" element={<PandasBasics />} />
           {/* <Route index element={<Two />} />
           <Route path="Inbuilt-Functions" element={<Inbuilt />} />
           <Route path="Loops-in-Python" element={<User />} /> */}

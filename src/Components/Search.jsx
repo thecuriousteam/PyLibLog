@@ -27,12 +27,15 @@ const Search = () => {
         </div>
         {searchInput && (
             <div className='bg-[#fff] text-black absolute w-[264px] h-auto pl-10 pb-5'>
-            {filteredContent.map(menu => (
-             <div>
-                <NavLink to = {`${menu.name}`}>
+            {filteredContent.map((menu,i) => (
+              menu.children.map(child => (
+                <div key = {i}>
+                <NavLink to = {`${menu.name}/${child.name}`}>
                 <h3 className='pb-5 pt-5'>{menu.name}</h3> 
                 </NavLink>
                 </div>
+              ))
+            
             ))}
             </div>
         )}
