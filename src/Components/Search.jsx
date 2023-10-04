@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import { subMenusList } from '../Constants';
 import {CiSearch } from "react-icons/ci";
 import { AiOutlineDoubleRight } from "react-icons/ai";
@@ -20,10 +20,6 @@ const Search = () => {
      setSearchInput(name);
      setIsSearchBarOpen(false)
    };
-  
-  //  useEffect(() => {
-  //    setSearchInput("");
-  //  },[selectOption])
 
   return (
     <>
