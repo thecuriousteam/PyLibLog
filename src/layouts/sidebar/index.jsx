@@ -67,9 +67,9 @@ const Sidebar = () => {
           },
         },
       };
-// subMenusList.map(menu => {
-//   console.log(menu);
-// })
+  // subMenusList.map(menu => {
+  //   console.log(menu);
+  // })
   return (
     <div>
       <div
@@ -93,26 +93,26 @@ const Sidebar = () => {
             width={45}
             alt=""
           /> */}
-          <h1 className="text-[22px] text-white whitespace-pre text-center pb-5">LEARN DOCKER</h1>
-         <Search />
+          <h1 className="text-[22px] text-white whitespace-pre text-center pb-5">
+            PYLIBLOG
+          </h1>
+          <Search />
         </div>
-        
+
         <div className="flex flex-col  h-full">
           <ul className="whitespace-pre px-2.5 text-[0.9rem] py-5 flex flex-col gap-1  font-medium overflow-x-hidden scrollbar-thin scrollbar-track-[#ccc] scrollbar-thumb-yellow-500   md:h-[68%] h-[70%]">
-           
             {(open || isTabletMid) && (
               <div className="py-5 border-slate-300 ">
                 {/* <small className="pl-3 text-slate-500 inline-block mb-2">
                   Product categories
                 </small> */}
-                {subMenusList?.map((data,i) => (
+                {subMenusList?.map((data, i) => (
                   <div key={i} className="flex flex-col gap-1">
                     <SubMenu data={data} />
                   </div>
                 ))}
               </div>
             )}
-           
           </ul>
           {open && (
             <div className="flex-1 text-sm z-50  max-h-48 my-auto  whitespace-pre   w-full  font-medium  ">
