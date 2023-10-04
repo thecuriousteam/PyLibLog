@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useRef } from "react";
 import SubMenu from "./SubMenu";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 // * React icons
 import { IoIosArrowBack } from "react-icons/io";
@@ -92,12 +93,14 @@ const Sidebar = () => {
             width={45}
             alt=""
           /> */}
+          <Link to='/'>
           <h1
             className="text-[22px] text-white whitespace-pre text-center pb-5"
             style={{ fontFamily: "Poppins, sans-serif", fontWeight: "light" }}
           >
             PyLibLog
           </h1>
+          </Link>
           <Search />
         </div>
 
