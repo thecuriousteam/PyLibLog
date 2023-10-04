@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import { subMenusList } from '../Constants';
 import {CiSearch } from "react-icons/ci";
 import { AiOutlineDoubleRight } from "react-icons/ai";
@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 const Search = () => {
     const [searchInput, setSearchInput] = useState("");
+    const [isSearchBarOpen, setIsSearchBarOpen] = useState(false);
     const handleChange = (e) => {
       e.preventDefault();
       setSearchInput(e.target.value);
@@ -13,7 +14,17 @@ const Search = () => {
     const filteredContent = subMenusList.filter(menu => {
         const content = menu.title.toLowerCase();
         return content.includes(searchInput.toLowerCase());
-    })
+    });
+
+   const selectOption = (name) => {
+     setSearchInput(name);
+     setIsSearchBarOpen(false)
+   };
+  
+  //  useEffect(() => {
+  //    setSearchInput("");
+  //  },[selectOption])
+
   return (
     <>
         <div className="relative">
@@ -25,13 +36,13 @@ const Search = () => {
         onChange={handleChange}
         value={searchInput} />
         </div>
-        {searchInput && (
-            <div className='bg-[#fff] text-black absolute w-[264px] h-auto pl-10 pb-5'>
+        {(searchInput && !isSearchBarOpen) &&  (
+            <div className='bg-[#fff] text-black absolute w-[264px] h-auto pl-10 pb-5' style={!isSearchBarOpen ? {paddingBottom:0}: ""}>
             {filteredContent.map((menu,i) => (
               menu.children.map(child => (
                 <div key = {i}>
                 <NavLink to = {`${menu.name}/${child.name}`}>
-                <h3 className='pb-5 pt-5'>{menu.name}</h3> 
+                <h3 className='pb-5 pt-5'onClick={()=>selectOption(menu.name)}>{menu.name}</h3> 
                 </NavLink>
                 </div>
               ))
