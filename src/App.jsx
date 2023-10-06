@@ -6,6 +6,7 @@ import PythonBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-P
 import NumpyBasics from "./Python_Library_Pages/Numpy/Intro-to-Numpy";
 import PandasBasics from "./Python_Library_Pages/Pandas/Intro-to-Pandas";
 
+import PythonInterpreter from "./Python_Interpreter/PythonInterpreter";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="Loops-in-Python" element={<User />} /> */}
         </Route>
         {/* remaing routes*/}
+        <Route path="/play-ground" element={<PythonInterpreter />} />
       </Routes>
     </RootLayout>
   );
