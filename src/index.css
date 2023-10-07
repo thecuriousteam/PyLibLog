@@ -17,6 +17,10 @@
     @apply text-xl font-medium capitalize;
   }
 }
+h2{
+  font-style: italic;
+  font-weight: bold;
+}
 
 .link {
   @apply p-2.5 flex rounded-md gap-6 items-center md:cursor-pointer cursor-default duration-300 font-medium;
