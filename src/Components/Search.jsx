@@ -1,24 +1,37 @@
 import React, {useState} from 'react';
 import { subMenusList } from '../Constants';
 import {CiSearch } from "react-icons/ci";
-import { AiOutlineDoubleRight } from "react-icons/ai";
 import { NavLink } from 'react-router-dom';
 
 const Search = () => {
     const [searchInput, setSearchInput] = useState("");
-    const [isSearchBarOpen, setIsSearchBarOpen] = useState(false);
+    const [searchResults, setSearchResults] = useState([]);
     const handleChange = (e) => {
       e.preventDefault();
-      setSearchInput(e.target.value);
-    };
-    const filteredContent = subMenusList.filter(menu => {
-        const content = menu.title.toLowerCase();
-        return content.includes(searchInput.toLowerCase());
-    });
+      setSearchInput(e.target.value.toLowerCase());
 
+      // Filter sub-menus based on the search input
+      const results = subMenusList.reduce((acc, menu) => {
+        const mainRoute = menu.name;
+
+        // Filter children of the menu based on the search input
+        const content = menu.children.filter((child) => {
+          const childContent = child.title.toLowerCase();
+          return childContent.includes(searchInput);
+        });
+  
+        if (content.length > 0) {
+          acc.push({ content, mainRoute });
+        }
+  
+        return acc;
+      }, []);
+  
+      setSearchResults(results);
+    };
+  
    const selectOption = (name) => {
      setSearchInput(name);
-     setIsSearchBarOpen(false)
    };
 
   return (
@@ -32,20 +45,27 @@ const Search = () => {
         onChange={handleChange}
         value={searchInput} />
         </div>
-        {(searchInput && !isSearchBarOpen) &&  (
-            <div className='bg-[#fff] text-black absolute w-[264px] h-auto pl-10 pb-5' style={!isSearchBarOpen ? {paddingBottom:0}: ""}>
-            {filteredContent.map((menu,i) => (
-              menu.children.map(child => (
-                <div key = {i}>
-                <NavLink to = {`${menu.name}/${child.name}`}>
-                <h3 className='pb-5 pt-5'onClick={()=>selectOption(menu.name)}>{menu.name}</h3> 
-                </NavLink>
+        {(searchInput) && (
+        <div className="bg-[#fff] text-black absolute w-[264px] h-auto pl-10 pb-5">
+          {searchResults.length > 0 ? (
+            searchResults.map((menu, i) =>
+              menu.content.map((child) => (
+                <div key={i}>
+                  <NavLink to={`${menu.mainRoute}/${child.name}`}>
+                    <h3 className="pb-5 pt-5" onClick={() => selectOption(child.name)}>
+                      {child.title}
+                    </h3>
+                  </NavLink>
                 </div>
               ))
-            
-            ))}
+            )
+          ) : (
+            <div>
+              <h2>No results found</h2>
             </div>
-        )}
+          )}
+        </div>
+      )}
    </>
    
   )

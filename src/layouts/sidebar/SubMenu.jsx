@@ -41,7 +41,7 @@ const SubMenu = ({ data }) => {
       to={`${data.name}/${child.name}`}
       className="link !bg-transparent capitalize"
     >
-      {child.name}
+      {child.title}
     </NavLink>
   </li>
 
