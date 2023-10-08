@@ -35,7 +35,6 @@ const App = () => {
           <Route path="Loops-in-Python" element={<User />} /> */}
         </Route>
         {/* remaing routes*/}
-        <Route path="/play-ground" element={<PythonInterpreter />} />
       </Routes>
     </RootLayout>
   );
