@@ -31,5 +31,15 @@ export const subMenusList = [
       }
     ],
   },
+  {
+    name: "Streamlit-Library",
+    title: "4. Intro to Streamlit",
+    children: [
+      {
+        title: "Intro to Streamlit",
+        name: "Intro-to-Streamlit",
+      }
+    ],
+  },
   /* remaining contents*/
 ];
