@@ -105,7 +105,14 @@ const Sidebar = () => {
         </div>
 
         <div className="flex flex-col  h-full">
-          <ul className="whitespace-pre px-2.5 text-[0.9rem] py-5 flex flex-col gap-1  font-medium overflow-x-hidden scrollbar-thin scrollbar-track-[#ccc] scrollbar-thumb-yellow-500   md:h-[68%] h-[70%]">
+          <div className='flex justify-center items-center mt-3'>
+          <Link to='/play-ground'>
+          <button className='px-5 py-1 bg-[#8800ff] rounded hover:bg-white hover:text-black'>
+            Python PlayGround
+          </button>
+          </Link>
+          </div>
+          <ul className="whitespace-pre px-2.5 text-[0.9rem] py-1 flex flex-col gap-1  font-medium overflow-x-hidden scrollbar-thin scrollbar-track-[#ccc] scrollbar-thumb-yellow-500   md:h-[68%] h-[70%]">
             {(open || isTabletMid) && (
               <div className="py-5 border-slate-300 ">
                 {/* <small className="pl-3 text-slate-500 inline-block mb-2">
