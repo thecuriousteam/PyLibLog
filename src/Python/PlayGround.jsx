@@ -1,9 +1,9 @@
 import React,{ useState } from 'react';
-import Helmet from "react-helmet";
 import Scripts from './Scripts';
 import CodeEditor from './CodeEditor';
 import "brace/mode/python";
 import "brace/theme/monokai";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 let logs = [];
 
@@ -36,6 +36,7 @@ const PlayGround = () => {
     window.console.log = handleConsoleLog;
 
   return (
+    <HelmetProvider>
     <div id="python-editor-container" className='flex max-md:flex-col -mt-10 gap-5'>
     <Helmet>
       <script
@@ -46,7 +47,7 @@ const PlayGround = () => {
         type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.7.1/brython_stdlib.js"
       />
-    </Helmet>
+      </Helmet>
     <Scripts code={code} />
     <div id="python-editor-input">
         <div className='flex justify-between mb-2 p-2'>
@@ -78,6 +79,7 @@ const PlayGround = () => {
       />
     </div>
   </div>
+    </HelmetProvider>
 );
 }; 
 
