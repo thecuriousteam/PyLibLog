@@ -59,7 +59,7 @@ const Search = () => {
             searchResults.map((menu, i) =>
               menu.content.map((child, j) => (
                 <div key={`${i}-${j}`}>
-                  <NavLink to={`${menu.mainRoute}/${child.name}`}>
+                  <NavLink to={`${menu.mainRoute}/${child.route}`}>
                     <h3 className="pb-5 pt-5" onClick={() => selectOption(child.title)}>
                       {child.title}
                     </h3>
