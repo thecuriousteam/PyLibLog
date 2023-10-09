@@ -7,11 +7,16 @@ import NumpyBasics from "./Python_Library_Pages/Numpy/Intro-to-Numpy";
 import PandasBasics from "./Python_Library_Pages/Pandas/Intro-to-Pandas";
 import MatplotlibBasics from "./Python_Library_Pages/Matplotlib/Intro-to-Matplotlib";
 
+import PlayGround from "./Python/PlayGround";
+
+
 const App = () => {
   return (
     <RootLayout>
       <Routes>
         <Route path="/" element={<AllApps />} />
+
+        <Route path="/play-ground" element={<PlayGround />} />
 
         <Route path="/Python-Basics" element={<Outlet />}>
           <Route path="Introduction-to-Python" element={<PythonBasics />} />
