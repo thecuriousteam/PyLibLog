@@ -37,5 +37,16 @@ export const subMenusList = [
       }
     ],
   },
+  
+  {
+    name: "Matplotlib-Library",
+    title: "4. Intro to Matplotlib",
+    children: [
+      {
+        title: "Intro to Matplotlib",
+        name: "Intro-to-Matplotlib",
+      }
+    ],
+  },
   /* remaining contents*/
 ];
