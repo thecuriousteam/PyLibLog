@@ -1,4 +1,4 @@
-// important 
+// important
 // guys must name route value equal to same as what you give the route in App.jsx
 
 export const subMenusList = [
@@ -10,7 +10,15 @@ export const subMenusList = [
       {
         title: "Introduction to Python",
         route: "Introduction-to-Python",
-      }
+      },
+      {
+        title: "Introduction to Operators",
+        route: "Introduction-to-Operators",
+      },
+      {
+        title: "Introduction to Functions",
+        route: "Introduction-to-Functions",
+      },
     ],
   },
   {
@@ -19,11 +27,10 @@ export const subMenusList = [
     route: "/NumPy-Library/Intro-to-Numpy",
     children: [
       {
-        // List of Pages 
-        title: "Intro to Numpy", 
+        // List of Pages
+        title: "Intro to Numpy",
         route: "Intro-to-Numpy",
-        
-      }
+      },
     ],
   },
   {
@@ -34,7 +41,7 @@ export const subMenusList = [
       {
         title: "Intro to pandas",
         route: "Intro-to-pandas",
-      }
+      },
     ],
   },
   /* remaining contents*/
