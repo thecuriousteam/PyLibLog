@@ -4,7 +4,7 @@
 export const subMenusList = [
   {
     name: "Python-Basics",
-    title: "1. Python Basics",
+    title: "Python Basics",
     route: "/Python-Basics/Introduction-to-Python",
     children: [
       {
@@ -23,7 +23,7 @@ export const subMenusList = [
   },
   {
     name: "NumPy-Library",
-    title: "2. NumPy",
+    title: "NumPy",
     route: "/NumPy-Library/Intro-to-Numpy",
     children: [
       {
@@ -35,7 +35,7 @@ export const subMenusList = [
   },
   {
     name: "Pandas-Library",
-    title: "3. Intro to Pandas",
+    title: "Intro to Pandas",
     route: "/Pandas-Library/Intro-to-pandas",
     children: [
       {
