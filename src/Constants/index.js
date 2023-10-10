@@ -9,7 +9,7 @@ export const subMenusList = [
     children: [
       {
         title: "Introduction to Python",
-        name: "Introduction-to-Python",
+        route: "Introduction-to-Python",
       }
     ],
   },
@@ -21,7 +21,7 @@ export const subMenusList = [
       {
         // List of Pages 
         title: "Intro to Numpy", 
-        name: "Intro-to-Numpy",
+        route: "Intro-to-Numpy",
         
       }
     ],
@@ -33,7 +33,7 @@ export const subMenusList = [
     children: [
       {
         title: "Intro to pandas",
-        name: "Intro-to-pandas",
+        route: "Intro-to-pandas",
       }
     ],
   },
