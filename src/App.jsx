@@ -14,12 +14,15 @@ import HandleComplexHTML from "./Python_Library_Pages/BeautifulSoup/Handling-Com
 import RealWorldExamples from "./Python_Library_Pages/BeautifulSoup/Real-World-Examples";
 import AdvanceWebScrapping from "./Python_Library_Pages/BeautifulSoup/Advance-Web-Scrapping";
 
+import PlayGround from "./Python/PlayGround";
 
 const App = () => {
   return (
     <RootLayout>
       <Routes>
         <Route path="/" element={<AllApps />} />
+
+        <Route path="/play-ground" element={<PlayGround />} />
 
         <Route path="/Python-Basics" element={<Outlet />}>
           <Route path="Introduction-to-Python" element={<PythonBasics />} />
