@@ -35,7 +35,7 @@ export const subMenusList = [
   },
   {
     name: "Pandas-Library",
-    title: "Intro to Pandas",
+    title: "Pandas",
     route: "/Pandas-Library/Intro-to-pandas",
     children: [
       {
