@@ -13,9 +13,23 @@
     background: #f1f1f1;
     letter-spacing: 0.5px;
   }
+
   h1 {
     @apply text-xl font-medium capitalize;
   }
+  .content {
+    margin-top: 40px;
+  }
+  .Links{
+    color: rgb(147, 3, 237);
+  }
+  .snippet{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    width: auto;
+    height: auto;
+  }
+
 }
 
 .link {

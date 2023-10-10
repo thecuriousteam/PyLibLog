@@ -31,5 +31,44 @@ export const subMenusList = [
       }
     ],
   },
+  {
+    name: "BeautifulSoup-Library",
+    title: "4. BeautifulSoup Library",
+    children: [
+      {
+        title: "Intro to BeautifulSoup",
+        name: "Intro-to-BeautifulSoup",
+      },
+      {
+        title: "Getting Started With BeautifulSoup",
+        name: "Getting-Started-With-BS",
+      },
+      {
+        title: "Basics of BeautifulSoup",
+        name: "Basics-of-BeautifulSoup",
+      },
+      {
+        title: "Navigating The HTML Tree",
+        name: "Navigating-HTML-Tree",
+      },
+      {
+        title: "Extracting Data From Web-Pages",
+        name: "Extracting-Data-From-WebPage",
+      },
+      {
+        title: "Handling Complex HTML Structures",
+        name: "Handling-Complex-HTML",
+      },
+      {
+        title: "Real-World Examples and Case Studies",
+        name: "ReaL-World-Examples",
+      },
+      {
+        title: "Advanced Web Scraping Techniques",
+        name: "Advance-Web-Scrapping",
+      }
+    ],
+  },
+
   /* remaining contents*/
 ];
