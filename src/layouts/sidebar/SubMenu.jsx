@@ -38,10 +38,10 @@ const SubMenu = ({ data }) => {
     {/* className="hover:text-blue-600 hover:font-medium" */}
     
     <NavLink
-      to={`${data.name}/${child.name}`}
+      to={`${data.name}/${child.route}`}
       className="link !bg-transparent capitalize"
     >
-      {child.name}
+      {child.title}
     </NavLink>
   </li>
 
