@@ -19,6 +19,7 @@ const BasicsBeautifulSoup = () => {
       </div>
 
       <div className="content">
+      
       <p className="snippet">
       &lt;!DOCTYPE html&gt; <br />
       &lt;html&gt;<br />
