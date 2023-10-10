@@ -1,5 +1,5 @@
 import React,{ useState } from 'react';
-import Helmet from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Scripts from './Scripts';
 import CodeEditor from './CodeEditor';
 import "brace/mode/python";
@@ -36,7 +36,8 @@ const PlayGround = () => {
     window.console.log = handleConsoleLog;
 
   return (
-    <div id="python-editor-container" className='flex max-md:flex-col -mt-10 gap-5'>
+    <HelmetProvider>
+      <div id="python-editor-container" className='flex max-md:flex-col -mt-10 gap-5'>
     <Helmet>
       <script
         type="text/javascript"
@@ -78,6 +79,8 @@ const PlayGround = () => {
       />
     </div>
   </div>
+    </HelmetProvider>
+    
 );
 }; 
 
