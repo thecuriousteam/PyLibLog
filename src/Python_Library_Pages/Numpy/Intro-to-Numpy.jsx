@@ -1,7 +1,7 @@
 import { color } from "framer-motion";
 import React from "react";
 
-const PandasBasics = () => {
+const NumpyBasics = () => {
   return (
         <div>
           <div>
@@ -72,4 +72,4 @@ const PandasBasics = () => {
     </div>
   );
 };
-export default PandasBasics;
+export default NumpyBasics;
