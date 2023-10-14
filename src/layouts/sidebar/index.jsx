@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useRef } from "react";
 import SubMenu from "./SubMenu";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 // * React icons
 import { IoIosArrowBack } from "react-icons/io";
@@ -84,32 +85,53 @@ const Sidebar = () => {
         initial={{ x: isTabletMid ? -250 : 0 }}
         animate={open ? "open" : "closed"}
         // sidebar color code (#E0E0E0)
-        className=" bg-[#212121] text-white shadow-xl z-[999] max-w-[19rem]  w-[19rem] 
-            overflow-hidden md:relative fixed h-screen ">
+        className="border-r border-[#BFC9CA] shadow-lg bg-[#EAEDED] text-black  text-[16px] shadow-xl z-[999] max-w-[19rem] w-[19rem] overflow-hidden md:relative fixed h-screen"
+        style={{ fontFamily: "Poppins, sans-serif", fontWeight: "light" }}
+      >
         <div className="flex-col pt-5 pl-5 pr-5 gap-2.5 font-medium border-b h-[150px] border-slate-300  bg-[#8800ff]">
           {/* <img
             src="https://img.icons8.com/color/512/firebase.png"
             width={45}
             alt=""
           /> */}
-          <h1
-            className="text-[22px] text-white whitespace-pre text-center pb-5"
-            style={{ fontFamily: "Poppins, sans-serif", fontWeight: "light" }}
-          >
-            PyLibLog
-          </h1>
+          <Link to="/">
+            <h1
+              className="text-[22px] text-white whitespace-pre text-center pb-5"
+              style={{ fontFamily: "Poppins, sans-serif", fontWeight: "light" }}
+            >
+              PyLibLog
+            </h1>
+          </Link>
           <Search />
         </div>
-
+        <div className="my-3"></div>
         <div className="flex flex-col  h-full">
-          <ul className="whitespace-pre px-2.5 text-[0.9rem] py-5 flex flex-col gap-1  font-medium overflow-x-hidden scrollbar-thin scrollbar-track-[#ccc] scrollbar-thumb-yellow-500   md:h-[68%] h-[70%]">
+          <div className="flex justify-center items-center mt-3">
+            <Link to="/play-ground">
+              <button className="px-5 py-1 bg-[#8800ff] rounded  text-white  text-[16px]">
+                Python PlayGround
+              </button>
+            </Link>
+          </div>
+          <div className="my-2"></div>
+          <ul
+            className="whitespace-pre  text-[16px] py-1 flex flex-col gap-1 font-light overflow-x-hidden scrollbar-thin scrollbar-track-[#ccc] scrollbar-thumb-yellow-500 md:h-[68%] h-[70%]  "
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
             {(open || isTabletMid) && (
-              <div className="py-5 border-slate-300 ">
+              <div className="py-5 border-slate-300 text-[16px]  ">
                 {/* <small className="pl-3 text-slate-500 inline-block mb-2">
                   Product categories
                 </small> */}
                 {subMenusList?.map((data, i) => (
-                  <div key={i} className="flex flex-col gap-1">
+                  <div
+                    key={i}
+                    className="flex flex-col gap-1 text-[16px] pl-2 pr-2 hover:bg-[#8800ff] hover:text-white border border-[#BFC9CA] p-1"
+                    style={{
+                      fontFamily: "Poppins, sans-serif",
+                      fontWeight: "light",
+                    }}
+                  >
                     <SubMenu data={data} />
                   </div>
                 ))}
