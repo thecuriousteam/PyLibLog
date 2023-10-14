@@ -5,11 +5,13 @@ import AllApps from "./Python_Library_Pages/AllApps";
 import PythonBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-Python";
 import NumpyBasics from "./Python_Library_Pages/Numpy/Intro-to-Numpy";
 import PandasBasics from "./Python_Library_Pages/Pandas/Intro-to-Pandas";
+import Navbar from "./Components/Navbar";
 
 
 const App = () => {
   return (
     <RootLayout>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<AllApps />} />
 
