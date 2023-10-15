@@ -10,6 +10,8 @@ import OperatorsBasics from "./Python_Library_Pages/Python_Basics/Intrduction-to
 import FunctionsBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-Functions";
 
 import PlayGround from "./Python/PlayGround";
+import DjangoIntro from "./Python_Library_Pages/Django/Introduction-to-django";
+import Installation from "./Python_Library_Pages/Django/Installation";
 
 const App = () => {
   return (
@@ -39,6 +41,11 @@ const App = () => {
         </Route>
         <Route path="Matplotlib-Library" element={<Outlet />}>
           <Route path="Intro-to-Matplotlib" element={<MatplotlibBasics />} />
+        </Route>
+        {/* django */}
+        <Route path="/Django" element={<Outlet />}>
+          <Route path="Introduction-to-django" element={<DjangoIntro />} />
+          <Route path="Installation" element={<Installation />} />
         </Route>
         {/* remaing routes*/}
       </Routes>

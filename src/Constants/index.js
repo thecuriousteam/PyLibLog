@@ -44,5 +44,20 @@ export const subMenusList = [
       },
     ],
   },
+  {
+    name: "Django",
+    title: "Django",
+    route: "/Django/Introduction-to-django",
+    children: [
+      {
+        title: "Installation",
+        route: "Installation",
+      },
+      {
+        title: "Introduction to Django",
+        route: "Introduction-to-django",
+      }
+    ],
+  },
   /* remaining contents*/
 ];
