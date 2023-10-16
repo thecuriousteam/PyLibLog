@@ -1,9 +1,11 @@
 import React,{ useState } from 'react';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Scripts from './Scripts';
 import CodeEditor from './CodeEditor';
 import "brace/mode/python";
 import "brace/theme/monokai";
+import { Helmet, HelmetProvider } from 'react-helmet-async'; 
+
+//error was fixed
 
 let logs = [];
 
@@ -37,7 +39,7 @@ const PlayGround = () => {
 
   return (
     <HelmetProvider>
-      <div id="python-editor-container" className='flex max-md:flex-col -mt-10 gap-5'>
+    <div id="python-editor-container" className='flex max-md:flex-col -mt-10 gap-5'>
     <Helmet>
       <script
         type="text/javascript"
@@ -47,7 +49,7 @@ const PlayGround = () => {
         type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.7.1/brython_stdlib.js"
       />
-    </Helmet>
+      </Helmet>
     <Scripts code={code} />
     <div id="python-editor-input">
         <div className='flex justify-between mb-2 p-2'>
@@ -80,7 +82,6 @@ const PlayGround = () => {
     </div>
   </div>
     </HelmetProvider>
-    
 );
 }; 
 
