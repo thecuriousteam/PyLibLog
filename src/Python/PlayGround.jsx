@@ -3,7 +3,9 @@ import Scripts from './Scripts';
 import CodeEditor from './CodeEditor';
 import "brace/mode/python";
 import "brace/theme/monokai";
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet, HelmetProvider } from 'react-helmet-async'; 
+
+//error was fixed
 
 let logs = [];
 
