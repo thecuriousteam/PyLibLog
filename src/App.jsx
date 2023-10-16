@@ -19,6 +19,10 @@ import FunctionsBasics from "./Python_Library_Pages/Python_Basics/Introduction-t
 
 
 import PlayGround from "./Python/PlayGround";
+import TensorFlow from "./Python_Library_Pages/TensorFlow/Introduction-to-tensorFlow";
+import Tensors from "./Python_Library_Pages/TensorFlow/Tensors";
+import Variables from "./Python_Library_Pages/TensorFlow/Variables";
+import Installation from "./Python_Library_Pages/TensorFlow/Installation";
 
 const App = () => {
   return (
@@ -83,6 +87,16 @@ const App = () => {
               path="Real-World-Examples" 
               element={<RealWorldExamples />} 
              />
+        {/* TensorFlow  */}
+        <Route path="/TensorFlow" element={<Outlet />}>
+          <Route path="Introduction-to-tensorFlow" element={<TensorFlow />} />
+          <Route path="Installation" element={<Installation />}/>
+          <Route
+            path="Introduction-to-Tensors"
+            element={<Tensors />}
+          />
+          <Route path="Introduction-to-Variables" element={<Variables />} />
+
         </Route>
         {/* remaing routes*/}
       </Routes>
