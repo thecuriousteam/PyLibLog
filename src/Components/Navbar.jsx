@@ -14,12 +14,10 @@ const Navbar = () => {
     <>
       <nav class="bg-indigo-500 w-full md:flex justify-between  relative z-10 ">
         
-        // Navbar logo
         <div className="bg-indigo-500 logo w-full md:w-1/5 lg:w-1/4 text-center py-4">
           <span className="text-white text-xl font-bold">PyLibLog</span>
         </div>
 
-        // menu button
         <div
           className="menu-btn text-3xl  text-white absolute right-8 top-3 cursor-pointer md:hidden"
           onClick={() => setisOpen(!isOpen)}
@@ -27,7 +25,6 @@ const Navbar = () => {
           <ion-icon name={`${isOpen ? "close" : "menu"}-outline`}></ion-icon>
         </div>
 
-        // Navbar menu bar
         <div
           className={`nav-menu  w-full my-1 md:my-4  md:w-4/5 lg:w-3/4 md:flex justify-end transition-all duration-500 ease-in absolute md:static z-[-1]  md:z-auto  ${
             isOpen ? "top-[55px]" : " top-[-150px]"
