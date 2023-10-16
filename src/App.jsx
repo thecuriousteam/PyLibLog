@@ -4,9 +4,12 @@ import AllApps from "./Python_Library_Pages/AllApps";
 
 import PythonBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-Python";
 import NumpyBasics from "./Python_Library_Pages/Numpy/Intro-to-Numpy";
+import MatplotlibBasics from "./Python_Library_Pages/Matplotlib/Intro-to-Matplotlib";
 import PandasBasics from "./Python_Library_Pages/Pandas/Intro-to-Pandas";
-
+import OperatorsBasics from "./Python_Library_Pages/Python_Basics/Intrduction-to-Operators";
+import FunctionsBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-Functions";
 import PlayGround from "./Python/PlayGround";
+import Navbar from "./Components/Navbar";
 
 const App = () => {
   return (
