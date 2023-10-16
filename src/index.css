@@ -25,3 +25,30 @@
 .active {
   @apply bg-blue-100 text-blue-600;
 }
+
+
+
+.input {
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+}
+
+
+h1 {
+  font-size: 30pt;
+  font-weight: bold;
+  color: blueviolet;
+}
+
+h2{
+  font-size: 20pt;
+  font-weight: bold;
+  color: palevioletred;
+}
+
+h4{
+  font-size: 16pt;
+  font-style: italic;
+  color: palevioletred;
+}

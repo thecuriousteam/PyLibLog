@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const PythonBasics = () => {
@@ -17,7 +18,7 @@ This doc will help you to get all the knowledge you want for getting started wit
 If you have never programmed anything before and are just getting started, this might be the blog for you. 
 Python has many use cases in different industries such as
 
-  Web Development:
+  Web Development:  
     - Frameworks like Django and Flask make Python a popular choice for building web applications.
 
   Data Science and Machine Learning:
@@ -116,12 +117,14 @@ Python has many use cases in different industries such as
       <br />
       <p>Now that we know the importance and some use-cases of Python, let's jump into the interesting and exciting part that is writing our first program using Python. Don't worry if you are writing a program for the first time; you'll get to know soon. Now let's start our first program!<br /><br />
 
-      <h3><u>Program 1</u>: Hello World!</h3>
-      <pre>
+      <h3><u>Program</u>: Hello World!</h3>
+      <br />
+      <pre class="input">
         <code>
           {`print("Hello World!")`}
         </code>
       </pre>
+      <br />
 
       <p>
         <strong><u>Explanation:</u></strong>
@@ -142,7 +145,9 @@ Python has many use cases in different industries such as
       </ol>
       <pre><br />
         <code>
-          <u>Output</u>: Hello World!
+          <part>
+        <b>  <u>Output</u>: Hello World!</b>
+          </part>
        </code>
       </pre><br />
       <p>These programs are basic examples to help you understand the syntax and structure of Python code. As you progress, you can explore more advanced topics, such as data types, control structures, and functions.</p>
@@ -154,15 +159,20 @@ Python has many use cases in different industries such as
       <br />
 
       <p>In Python, you can take input from the user using the <code>input()</code> function. Now let's move on and take input from the user. This function reads a line from the user's input and returns it as a string.</p>
-
+      <br />
       <h3><u>Example:</u></h3>
+      <br />
       <pre>
-        <code>
-          {`user_input = input("Enter something: ")
-print("You entered:", user_input)`}
-        </code>
+        
+        <p class="input"> 
+        <part>
+        <p>user_input = input("Enter something: ")</p>
+        <p>print("You entered:", user_input)</p> 
+        </part>
+        </p>
+       
       </pre>
-
+      <br />
       <p><u>Explanation:</u></p>
       <ul>
         <li>In this code, <code>input("Enter something: ")</code> prompts the user to enter something and waits for them to input a value.</li>
@@ -173,8 +183,8 @@ print("You entered:", user_input)`}
       <p>You can use the <code>input()</code> function without any argument, but providing a prompt inside the function call makes the user interaction more meaningful.</p>
 
       <p>Keep in mind that the <code>input()</code> function always returns a string. If you want to use the input as a number, you'll need to convert it using functions like <code>int()</code> or <code>float()</code> for example:</p>
-
-      <pre><br />
+      <br />
+      <pre class="input"><br />
         <code>
           {`user_input = int(input("Enter an integer: "))
 print("You entered:", user_input)`}
@@ -193,7 +203,7 @@ print("You entered:", user_input)`}
       <br />
 
       <h2><u><b>1. False, True, None</b></u></h2>
-      <pre>
+      <pre class="input">
       <b>
       <code>
 {`flag = True
@@ -209,8 +219,8 @@ if flag:
       <h2><b><u>2. and, or, not: </u></b></h2>
       <br />
 
-      <h3><b><u>and operator:</u></b></h3>
-      <pre>
+      <h4><b><u>and operator:</u></b></h4>
+      <pre class="input">
       <b>
       <code>
           {`x = 5
@@ -223,8 +233,8 @@ print("Both x and y are greater than 0")`}
 
       <p>The <code>and</code> operator is used to combine two conditions. The statement prints a message if both conditions are <code>True</code>.</p>
       <br />
-      <h3><b><u>or operator:</u></b></h3>
-      <pre>
+      <h4><b><u>or operator:</u></b></h4>
+      <pre class="input">
       <b>
       <code>
       {`x = 5
@@ -236,8 +246,8 @@ if x > 0 or y > 0:
       </pre>
       <p>The <code>or</code> operator is used when either of a condition is true. The statement prints if one statement is  <code>True</code> out of both.</p>
 <br />
-<h3><b><u>not operator:</u></b></h3>
-      <pre>
+<h4><b><u>not operator:</u></b></h4>
+      <pre class="input">
       <b>
       <code>
       {`x = 5
@@ -250,7 +260,7 @@ if not (x > 0 and y > 0):
       <p>The <code>not</code> operator is used to negate the condition inside the <code>if</code> statement. The <code>print</code> statement will be executed if either x or y (or both) is not greater than 0.</p>
       <br />
       <h2><b><u>3. if, else, elif</u></b></h2>
-      <pre>
+      <pre class="input">
         <b>
         <code>
 {`score = 85
@@ -270,11 +280,11 @@ If neither of the above conditions is met, it prints "C grade" as the default gr
 This program uses conditional statements (if, elif, and else) to determine the appropriate grade based on the student's score. </code></p>
       <br />
 
-      <h3><b><u>4.break, continue, comment</u></b></h3>
+      <h2><b><u>4.break, continue, comment</u></b></h2>
       <br />
       <h4><b><u>break</u></b></h4>
 
-      <pre>
+      <pre class="input">
         <b>
         <code>
 {`print("Example with break:")
@@ -287,20 +297,21 @@ for i in range(5):
 </code>
 <br />
 <code>
-<p><b>Output for break :</b></p>
+
+</code>
+        </b>
+      </pre>
+      <p><b><b>Output for break :</b></b></p>
 0 <br />
 1 <br />
 2 <br />
 Breaking the loop at i = 3 <br />
 <br />
-</code>
-        </b>
-      </pre>
       <p>break statement is used to terminate the loop when i becomes equal to 3. As a result, the loop is interrupted, and the message is printed.</p>
       <br />
       <h4><b><u>continue</u></b></h4>
 
-<pre>
+<pre class="input">
   <b>
   <code>
 {`print("\nExample with continue:")                                                 
@@ -314,6 +325,10 @@ for i in range(5):
 </code>
 <br />
 <code>
+
+</code>
+  </b>
+</pre>
 <p><b>Output for continue :</b></p>
 0 <br />
 1 <br />
@@ -321,14 +336,11 @@ Skipping iteration at i = 2 <br />
 3 <br />
 4 <br />
 <br />
-</code>
-  </b>
-</pre>
 <p>continue statement is used to skip the iteration when i is equal to 2. As a result, the print statement inside the loop is bypassed for that specific iteration, and the loop continues with the next iteration.</p>
 <br />
 
 <h4><b><u>Comment</u></b></h4>
-<pre>
+<pre class="input">
   <code>
     <b>
       # Here '#' is used to add comments for a line, this will not be exceuted / not seen in Output <br />
@@ -337,13 +349,15 @@ Skipping iteration at i = 2 <br />
   </code>
   <b>
     <br />
-    Output : Hey there!
+
   </b>
 </pre>
+<b><b>Output : Hey there!</b></b>
+<br />
 <br />
 
       <h2><b><u>5. def, return</u></b></h2>
-      <pre>
+      <pre class="input">
         <code>
 <b>
 {`def add(x, y):
@@ -352,16 +366,17 @@ Skipping iteration at i = 2 <br />
 result = add(3, 5)
 print(result)`}
 <br /> <br />
-Output : 8
+
 </b>
         </code>
       </pre>
-
+      <p><b>Output : 8</b></p>
+        <br />
       <p>Functions are defined using <code>def</code>, and <code>return</code> is used to send a value back to the caller. In this case, a simple <code>add</code> function is defined and called with arguments.</p>
 
       <br />
-      <h1><b><u>6. import, from, as</u></b></h1>
-      <pre>
+      <h2><b><u>6. import, from, as</u></b></h2>
+      <pre class="input">
 <b>
 <code>
           {`import math
@@ -369,26 +384,28 @@ from math import sqrt as square_root
 
 result = square_root(25)`}
 <br /> <br />
-Output : 5
+
         </code>
 </b>
       </pre>
-
+      <p><b>Output : 5</b></p>
+        <br />
       <p><code>import</code> is used to bring in a module, and <code>from</code> allows you to import specific items. In this example, the <code>sqrt</code> function from the <code>math</code> module is imported and given the alias <code>square_root</code>.</p>
       <br /><br />
       <h1><b>6.Some Basic Types of Errors :</b></h1>
       <br />
-      <h3><b><u>Syntax Errors :</u></b></h3>
-      <pre>
+      <h4><b><u>Syntax Errors :</u></b></h4>
+      <pre class="input">
         <code>
-        <b>  # Syntax Error Example <br />
+        <b># Syntax Error Example <br />
 print("Hello, World!"
 </b>
         </code>
-        <p>These occur when the code violates the syntax rules of the programming language. <br />The interpreter cannot execute the code if it contains syntax errors.</p>
+        
       </pre> <br />
-      <h3><b><u>Runtime errors :</u></b></h3>
-      <pre>
+      <p>These occur when the code violates the syntax rules of the programming language. <br />The interpreter cannot execute the code if it contains syntax errors.</p>
+      <h4><b><u>Runtime errors :</u></b></h4>
+      <pre class="input">
         <code>
           <b>
           # Runtime Error Example (Division by Zero) <br />
@@ -396,8 +413,9 @@ x = 10 / 0
 
           </b>
         </code>
-        <p>Also known as exceptions, these errors occur during the execution of the program. <br />Common examples include division by zero, accessing an undefined variable, <br />or trying to open a file that does not exist.</p>
+        
       </pre>
+      <p>Also known as exceptions, these errors occur during the execution of the program. <br />Common examples include division by zero, accessing an undefined variable, <br />or trying to open a file that does not exist.</p>
 <br /><br />
 
       <h1><b>7. Exception Handling</b></h1>
@@ -408,9 +426,10 @@ x = 10 / 0
 
       </p>
         <br />
-        <pre>
+        <h4><u><i>try, except block:</i></u></h4>
+        <pre class="input">
           <code>
-            <h4><u><i>try, except block:</i></u></h4>
+
             <b>
             
     # Code that may cause an exception <br />
@@ -421,12 +440,13 @@ except ZeroDivisionError: <br />
             </b>
           </code>
           <br />
-          <p>To handle exceptions, the try block is used to enclose the code that might raise an exception, <br />and the except block is used to define the actions to be taken if a particular exception occurs.</p>
+         
         </pre>
+        <p>To handle exceptions, the try block is used to enclose the code that might raise an exception, <br />and the except block is used to define the actions to be taken if a particular exception occurs.</p>
         <br />
 
         <h4><b><u>finally block:</u></b></h4>
-        <pre>
+        <pre class="input">
     <b>try:
     file = open("example.txt", "r") <br />
     # Code to read from the file <br />
@@ -441,7 +461,7 @@ except ZeroDivisionError: <br />
         <br /><br />
       <h1><b>8. Classes</b></h1>
       <br />
-      <pre>
+      <pre class="input">
         <code>
           <b>
           {`class Dog:
@@ -473,3 +493,4 @@ my_dog.bark()`}
 };
 
 export default PythonBasics;
+
