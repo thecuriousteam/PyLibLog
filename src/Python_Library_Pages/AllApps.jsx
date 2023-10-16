@@ -32,6 +32,7 @@ const AllApps = () => {
               className="list-none hover:text-[#8800ff] cursor-pointer p-1.5 text-lg text-gray-900 ml-[3rem]"
             >
               {/* {data.name} */}
+              <span style={{ marginRight: "1rem" }}>{i + 1}.</span>
               <Link to={data.route}>{data.title}</Link>
             </li>
           ))}
