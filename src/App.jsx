@@ -9,7 +9,14 @@ import PandasBasics from "./Python_Library_Pages/Pandas/Intro-to-Pandas";
 import OperatorsBasics from "./Python_Library_Pages/Python_Basics/Intrduction-to-Operators";
 import FunctionsBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-Functions";
 import PlayGround from "./Python/PlayGround";
+
 import Navbar from "./Components/Navbar";
+
+import TensorFlow from "./Python_Library_Pages/TensorFlow/Introduction-to-tensorFlow";
+import Tensors from "./Python_Library_Pages/TensorFlow/Tensors";
+import Variables from "./Python_Library_Pages/TensorFlow/Variables";
+import Installation from "./Python_Library_Pages/TensorFlow/Installation";
+
 
 const App = () => {
   return (
@@ -40,6 +47,17 @@ const App = () => {
         </Route>
         <Route path="Matplotlib-Library" element={<Outlet />}>
           <Route path="Intro-to-Matplotlib" element={<MatplotlibBasics />} />
+        </Route>
+
+        {/* TensorFlow  */}
+        <Route path="/TensorFlow" element={<Outlet />}>
+          <Route path="Introduction-to-tensorFlow" element={<TensorFlow />} />
+          <Route path="Installation" element={<Installation />}/>
+          <Route
+            path="Introduction-to-Tensors"
+            element={<Tensors />}
+          />
+          <Route path="Introduction-to-Variables" element={<Variables />} />
         </Route>
         {/* remaing routes*/}
       </Routes>
