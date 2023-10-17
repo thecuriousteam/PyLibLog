@@ -54,5 +54,28 @@ export const subMenusList = [
       }
     ],
   },
+  {
+    name: "TensorFlow",
+    title: "TensorFlow",
+    route: "/TensorFlow/Introduction-to-tensorFlow",
+    children: [
+      {
+        title: "Installation",
+        route: "Installation",
+      },
+      {
+        title: "Introduction to TensorFlow",
+        route: "Introduction-to-TensorFlow",
+      },
+      {
+        title: "Introduction to Tensors",
+        route: "Introduction-to-Tensors",
+      },
+      {
+        title: "Introduction to Variables",
+        route: "Introduction-to-Variables",
+      },
+    ],
+  }
   /* remaining contents*/
 ];
