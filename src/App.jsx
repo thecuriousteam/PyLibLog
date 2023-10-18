@@ -21,7 +21,7 @@ import Installation from "./Python_Library_Pages/TensorFlow/Installation";
 const App = () => {
   return (
     <RootLayout>
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<AllApps />} />
 
@@ -52,12 +52,9 @@ const App = () => {
         {/* TensorFlow  */}
         <Route path="/TensorFlow" element={<Outlet />}>
           <Route path="Introduction-to-tensorFlow" element={<TensorFlow />} />
-          <Route path="Installation" element={<Installation />}/>
-          <Route
-            path="Introduction-to-Tensors"
-            element={<Tensors />}
-          />
-          <Route path="Introduction-to-Variables" element={<Variables />} />
+          {/* <Route path="Installation" element={<Installation />} />
+          <Route path="Introduction-to-Tensors" element={<Tensors />} />
+          <Route path="Introduction-to-Variables" element={<Variables />} /> */}
         </Route>
         {/* remaing routes*/}
       </Routes>
