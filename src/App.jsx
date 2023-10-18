@@ -4,7 +4,6 @@ import AllApps from "./Python_Library_Pages/AllApps";
 
 import PythonBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-Python";
 import NumpyBasics from "./Python_Library_Pages/Numpy/Intro-to-Numpy";
-import PandasBasics from "./Python_Library_Pages/Pandas/Intro-to-Pandas";
 import MatplotlibBasics from "./Python_Library_Pages/Matplotlib/Intro-to-Matplotlib";
 import BeautifulSoupBasics from "./Python_Library_Pages/BeautifulSoup/Intro-to-BeautifulSoup";
 import GettingStartedBS from "./Python_Library_Pages/BeautifulSoup/Getting-Started-With-BS";
@@ -16,17 +15,24 @@ import RealWorldExamples from "./Python_Library_Pages/BeautifulSoup/Real-World-E
 import AdvanceWebScrapping from "./Python_Library_Pages/BeautifulSoup/Advance-Web-Scrapping";
 import OperatorsBasics from "./Python_Library_Pages/Python_Basics/Intrduction-to-Operators";
 import FunctionsBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-Functions";
-
+import PandasBasics from "./Python_Library_Pages/Pandas/Intro-to-Pandas";
+import OperatorsBasics from "./Python_Library_Pages/Python_Basics/Intrduction-to-Operators";
+import FunctionsBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-Functions";
 
 import PlayGround from "./Python/PlayGround";
+
+import Navbar from "./Components/Navbar";
+
 import TensorFlow from "./Python_Library_Pages/TensorFlow/Introduction-to-tensorFlow";
 import Tensors from "./Python_Library_Pages/TensorFlow/Tensors";
 import Variables from "./Python_Library_Pages/TensorFlow/Variables";
 import Installation from "./Python_Library_Pages/TensorFlow/Installation";
 
+
 const App = () => {
   return (
     <RootLayout>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<AllApps />} />
 
