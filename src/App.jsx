@@ -4,23 +4,27 @@ import AllApps from "./Python_Library_Pages/AllApps";
 
 import PythonBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-Python";
 import NumpyBasics from "./Python_Library_Pages/Numpy/Intro-to-Numpy";
-import PandasBasics from "./Python_Library_Pages/Pandas/Intro-to-Pandas";
 import MatplotlibBasics from "./Python_Library_Pages/Matplotlib/Intro-to-Matplotlib";
+import PandasBasics from "./Python_Library_Pages/Pandas/Intro-to-Pandas";
 import OperatorsBasics from "./Python_Library_Pages/Python_Basics/Intrduction-to-Operators";
 import FunctionsBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-Functions";
-
 import PlayGround from "./Python/PlayGround";
 
+
 import DjangoIntro from "./Python_Library_Pages/Django/Introduction-to-django";
-import Installation from "./Python_Library_Pages/Django/Installation";
+
+import Navbar from "./Components/Navbar";
+
 
 import TensorFlow from "./Python_Library_Pages/TensorFlow/Introduction-to-tensorFlow";
 import Tensors from "./Python_Library_Pages/TensorFlow/Tensors";
 import Variables from "./Python_Library_Pages/TensorFlow/Variables";
 import Installation from "./Python_Library_Pages/TensorFlow/Installation";
+
 const App = () => {
   return (
     <RootLayout>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<AllApps />} />
 
