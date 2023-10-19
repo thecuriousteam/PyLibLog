@@ -3,6 +3,7 @@ import { useRef } from "react";
 import SubMenu from "./SubMenu";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { AiOutlineClose } from "react-icons/ai";
 
 // * React icons
 import { IoIosArrowBack } from "react-icons/io";
@@ -13,6 +14,8 @@ import { HiOutlineDatabase } from "react-icons/hi";
 import { TbReportAnalytics } from "react-icons/tb";
 import { RiBuilding3Line } from "react-icons/ri";
 import { useMediaQuery } from "react-responsive";
+import { useAtom } from "jotai";
+import sidebarAtom from "../../atoms/sidebar-atom";
 import { MdMenu } from "react-icons/md";
 import { NavLink, useLocation, useRoutes } from "react-router-dom";
 import { subMenusList } from "../../Constants";
@@ -20,7 +23,7 @@ import Search from "../../Components/Search";
 
 const Sidebar = () => {
   let isTabletMid = useMediaQuery({ query: "(max-width: 768px)" });
-  const [open, setOpen] = useState(isTabletMid ? false : true);
+  const [open, setOpen] = useAtom(sidebarAtom);
   const sidebarRef = useRef();
   const { pathname } = useLocation();
 
@@ -72,36 +75,31 @@ const Sidebar = () => {
   //   console.log(menu);
   // })
   return (
-    <div>
-      <div
-        onClick={() => setOpen(false)}
-        className={`md:hidden fixed inset-0 max-h-screen z-[998] bg-black/50 ${
-          open ? "block" : "hidden"
-        } `}
-      ></div>
+    <>
       <motion.div
         ref={sidebarRef}
         variants={Nav_animation}
         initial={{ x: isTabletMid ? -250 : 0 }}
         animate={open ? "open" : "closed"}
-        // sidebar color code (#E0E0E0)
-        className="border-r border-[#BFC9CA] shadow-lg bg-[#EAEDED] text-black  text-[16px] shadow-xl z-[999] max-w-[19rem] w-[19rem] overflow-hidden md:relative fixed h-screen"
+        className="border-r border-[#BFC9CA] bg-[#EAEDED] text-black  text-[16px] shadow-xl z-[999] max-w-[19rem] w-[19rem] overflow-hidden md:relative fixed h-screen"
         style={{ fontFamily: "Poppins, sans-serif", fontWeight: "light" }}
       >
         <div className="flex-col pt-5 pl-5 pr-5 gap-2.5 font-medium border-b h-[150px] border-slate-300  bg-[#8800ff]">
-          {/* <img
-            src="https://img.icons8.com/color/512/firebase.png"
-            width={45}
-            alt=""
-          /> */}
-          <Link to="/">
-            <h1
-              className="text-[22px] text-white whitespace-pre text-center pb-5"
-              style={{ fontFamily: "Poppins, sans-serif", fontWeight: "light" }}
-            >
-              PyLibLog
-            </h1>
-          </Link>
+          <div className={`pb-5 ${isTabletMid ? "flex justify-between" : "flex justify-center"}`}>
+            <div></div>
+            <Link to="/">
+              <h1
+                className="text-[22px] text-white"
+                style={{
+                  fontFamily: "Poppins, sans-serif",
+                  fontWeight: "light",
+                }}
+              >
+                PyLibLog
+              </h1>
+            </Link>
+            {isTabletMid && <AiOutlineClose className="text-white text-2xl" onClick={() => setOpen(!open)} />}
+          </div>
           <Search />
         </div>
         <div className="my-3"></div>
@@ -120,9 +118,6 @@ const Sidebar = () => {
           >
             {(open || isTabletMid) && (
               <div className="py-5 border-slate-300 text-[16px]  ">
-                {/* <small className="pl-3 text-slate-500 inline-block mb-2">
-                  Product categories
-                </small> */}
                 {subMenusList?.map((data, i) => (
                   <div
                     key={i}
@@ -145,9 +140,6 @@ const Sidebar = () => {
                   <p>PyLibLog</p>
                   <small>From The Curious Community</small>
                 </div>
-                {/* <p className="text-teal-500 py-1.5 px-3 text-xs bg-teal-50 rounded-xl">
-                  Upgrade
-                </p> */}
               </div>
             </div>
           )}
@@ -171,14 +163,9 @@ const Sidebar = () => {
           }
           transition={{ duration: 0 }}
           className="absolute w-fit h-fit md:block z-50 hidden right-2 bottom-3 cursor-pointer"
-        >
-          {/* <IoIosArrowBack size={25} /> */}
-        </motion.div>
+        ></motion.div>
       </motion.div>
-      <div className="m-3 md:hidden  " onClick={() => setOpen(true)}>
-        <MdMenu size={25} />
-      </div>
-    </div>
+    </>
   );
 };
 

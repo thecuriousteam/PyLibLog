@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { useAtom } from "jotai";
+import sidebarAtom from "../atoms/sidebar-atom";
 
 const Navbar = () => {
+  const [sidebar, setSidebar] = useAtom(sidebarAtom);
   // Navbar links
   let links = [
     { name: "Docs", link: "/" },
@@ -12,14 +16,16 @@ const Navbar = () => {
 
   return (
     <>
-      <nav class="bg-indigo-500 w-full md:flex justify-between  relative z-10 ">
-        
-        <div className="bg-indigo-500 logo w-full md:w-1/5 lg:w-1/4 text-center py-4">
-          <span className="text-white text-xl font-bold">PyLibLog</span>
+      <nav class="bg-indigo-500 flex items-center py-3 px-4 justify-between w-full z-10 ">
+        <div className="text-3xl flex items-center text-white cursor-pointer md:hidden" onClick={() => setSidebar(!sidebar)}>
+          <ion-icon name={`${isOpen ? "close" : "menu"}-outline`}></ion-icon>
         </div>
+        {/* <div className="bg-indigo-500 logo w-full md:w-1/5 lg:w-1/4 text-center py-4"> */}
+        <span className="text-white text-xl font-bold">PyLibLog</span>
+        {/* </div> */}
 
         <div
-          className="menu-btn text-3xl  text-white absolute right-8 top-3 cursor-pointer md:hidden"
+          className="menu-btn text-3xl flex items-center text-white cursor-pointer md:hidden"
           onClick={() => setisOpen(!isOpen)}
         >
           <ion-icon name={`${isOpen ? "close" : "menu"}-outline`}></ion-icon>
