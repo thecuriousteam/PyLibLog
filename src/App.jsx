@@ -22,17 +22,14 @@ import FunctionsBasics from "./Python_Library_Pages/Python_Basics/Introduction-t
 import PlayGround from "./Python/PlayGround";
 
 import Navbar from "./Components/Navbar";
-
 import TensorFlow from "./Python_Library_Pages/TensorFlow/Introduction-to-tensorFlow";
-import Tensors from "./Python_Library_Pages/TensorFlow/Tensors";
-import Variables from "./Python_Library_Pages/TensorFlow/Variables";
-import Installation from "./Python_Library_Pages/TensorFlow/Installation";
+
 
 
 const App = () => {
   return (
     <RootLayout>
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<AllApps />} />
 
@@ -102,9 +99,10 @@ const App = () => {
             element={<Tensors />}
           />
           <Route path="Introduction-to-Variables" element={<Variables />} />
-
         </Route>
+
         {/* remaing routes*/}
+
       </Routes>
     </RootLayout>
   );
