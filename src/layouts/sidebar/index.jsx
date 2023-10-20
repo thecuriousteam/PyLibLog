@@ -82,7 +82,7 @@ const Sidebar = () => {
         initial={{ x: isTabletMid ? -250 : 0 }}
         animate={open ? "open" : "closed"}
         className="border-r border-[#BFC9CA] bg-[#EAEDED] text-black  text-[16px] shadow-xl z-[999] max-w-[19rem] w-[19rem] overflow-hidden md:relative fixed h-screen"
-        style={{ fontFamily: "Poppins, sans-serif", fontWeight: "light" }}
+        style={{ fontFamily: "Poppins, sans-serif", fontWeight: "light" ,height: "100%"}}
       >
         <div className="flex-col pt-5 pl-5 pr-5 gap-2.5 font-medium border-b h-[150px] border-slate-300  bg-[#8800ff]">
           <div className={`pb-5 ${isTabletMid ? "flex justify-between" : "flex justify-center"}`}>
@@ -125,6 +125,7 @@ const Sidebar = () => {
                     style={{
                       fontFamily: "Poppins, sans-serif",
                       fontWeight: "light",
+                      height: "fit-content",
                     }}
                   >
                     <SubMenu data={data} />
