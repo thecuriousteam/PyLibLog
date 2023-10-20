@@ -12,9 +12,9 @@ const Navbar = () => {
 
   return (
     <>
-      <nav class="bg-indigo-500 w-full md:flex justify-between  relative z-10 ">
+      <nav class="bg-purple-500 w-full md:flex justify-between  relative z-10 ">
         
-        <div className="bg-indigo-500 logo w-full md:w-1/5 lg:w-1/4 text-center py-4">
+        <div className="bg-purple-500 logo w-full md:w-1/5 lg:w-1/4 text-center py-4">
           <span className="text-white text-xl font-bold">PyLibLog</span>
         </div>
 
@@ -43,7 +43,7 @@ const Navbar = () => {
                 </li>
               );
             })}
-            <button className="bg-indigo-500 w-full hidden md:block px-2 border-2 border-white rounded text-white hover:bg-white hover:text-indigo-700 duration-500 ">
+            <button className="bg-purple-500 w-full hidden md:block px-2 border-2 border-white rounded text-white hover:bg-white hover:text-indigo-700 duration-500 ">
               Get Started
             </button>
           </ul>
