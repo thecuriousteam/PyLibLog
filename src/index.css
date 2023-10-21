@@ -25,3 +25,42 @@
 .active {
   @apply bg-blue-100 text-blue-600;
 }
+
+
+.input {
+  background-color: black;
+  color: aliceblue;
+  padding: 10px;
+}
+
+
+h1 {
+font-size: 24pt;
+font-weight: bold;
+color: blueviolet;
+font-family: Typography-Style;
+}
+
+h2{
+font-size: 18pt;
+font-weight: bold;
+color: palevioletred;
+font-family: Typography-Style;
+}
+
+h3{
+  font-family: Typography-Style;
+  font-size: 18pt;
+}
+
+h4{
+font-size: 18pt;
+font-style: italic;
+color: palevioletred;
+font-family: Typography-Style;
+}
+
+p{
+  font-size: 15pt;
+  font-family: Typography-Style;
+}
