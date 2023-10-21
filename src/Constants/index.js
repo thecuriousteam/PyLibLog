@@ -300,21 +300,13 @@ export const subMenusList = [
     ]
 },
 {
-    "name": "Flask",
-    "title": "Flask",
-    "route": "/Flask/Introduction-to-Flask",
-    "children": [
+    name: "Flask",
+    title: "Flask",
+    route: "/Flask/Introduction-to-flask",
+    children: [
         {
             "title": "Introduction to Flask",
-            "route": "Introduction-to-Flask"
-        },
-        {
-            "title": "Web development",
-            "route": "Web-development"
-        },
-        {
-            "title": "Micro web frameworks",
-            "route": "Micro-web-frameworks"
+            "route": "Introduction-to-flask"
         }
     ]
 },
