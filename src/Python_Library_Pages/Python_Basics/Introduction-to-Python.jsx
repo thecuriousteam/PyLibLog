@@ -2,7 +2,7 @@ import React from "react";
 
 const PythonBasics = () => {
   return (
-    <div>
+    <div className="max-h-screen p-8">
 
       <h1><b>1. Introduction to Python</b></h1>
       <br />
@@ -13,8 +13,8 @@ const PythonBasics = () => {
   - Has a large standard library.
   - Python is free and easy to learn.
 
-This doc will help you to get all the knowledge you want for getting started with Python. 
-If you have never programmed anything before and are just getting started, this might be the blog for you. 
+This doc will help you to get all the knowledge you want for getting started with Python.
+If you have never programmed anything before and are just getting started, this might be the blog for you.
 Python has many use cases in different industries such as
 
   Web Development:
@@ -33,11 +33,11 @@ Python has many use cases in different industries such as
     - It's often the first language taught in many computer science courses.
 
   Game Development:
-    - Python is used in the game development industry, and libraries like Pygame make it 
+    - Python is used in the game development industry, and libraries like Pygame make it
       easier to develop 2D games.
 
   GIS (Geographic Information System):
-    - Python is used for GIS applications, and libraries like Geopandas and ArcPy are popular 
+    - Python is used for GIS applications, and libraries like Geopandas and ArcPy are popular
       in this field.`}
         </code>
       </pre>
@@ -303,7 +303,7 @@ for i in range(5):
       <pre>
         <b>
           <code>
-            {`print("\nExample with continue:")                                                 
+            {`print("\nExample with continue:")
 for i in range(5):
     if i == 2:
         print("Skipping iteration at i =", i)

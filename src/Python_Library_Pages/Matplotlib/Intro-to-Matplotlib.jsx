@@ -2,7 +2,7 @@ import React from "react";
 
 const MatplotlibBasics = () => {
   return (
-    <div>
+    <div className="max-h-screen p-8">
       <h1>Introduction to Matplotlib</h1>
 
       <p>Development can start for Matplotlib from here</p>
