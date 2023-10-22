@@ -12,50 +12,51 @@ import PlayGround from "./Python/PlayGround";
 
 import Navbar from "./Components/Navbar";
 import TensorFlow from "./Python_Library_Pages/TensorFlow/Introduction-to-tensorFlow";
-
-
+import Profile from "./Components/Profile";
 
 const App = () => {
-  return (
-    <RootLayout>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<AllApps />} />
+	return (
+		<RootLayout>
+			<Navbar />
+			<Routes>
+				<Route path="/" element={<AllApps />} />
 
-        <Route path="/play-ground" element={<PlayGround />} />
+				<Route path="/play-ground" element={<PlayGround />} />
 
-        <Route path="/Python-Basics" element={<Outlet />}>
-          <Route path="Introduction-to-Python" element={<PythonBasics />} />
-          <Route
-            path="Introduction-to-Operators"
-            element={<OperatorsBasics />}
-          />
-          <Route
-            path="Introduction-to-Functions"
-            element={<FunctionsBasics />}
-          />
-        </Route>
-        <Route path="/NumPy-Library" element={<Outlet />}>
-          <Route path="Intro-to-Numpy" element={<NumpyBasics />} />
-          {/* if we have child element we need added here */}
-        </Route>
-        <Route path="Pandas-Library" element={<Outlet />}>
-          <Route path="Intro-to-pandas" element={<PandasBasics />} />
-        </Route>
-        <Route path="Matplotlib-Library" element={<Outlet />}>
-          <Route path="Intro-to-Matplotlib" element={<MatplotlibBasics />} />
-        </Route>
+				<Route path="/Python-Basics" element={<Outlet />}>
+					<Route path="Introduction-to-Python" element={<PythonBasics />} />
+					<Route
+						path="Introduction-to-Operators"
+						element={<OperatorsBasics />}
+					/>
+					<Route
+						path="Introduction-to-Functions"
+						element={<FunctionsBasics />}
+					/>
+				</Route>
+				<Route path="/NumPy-Library" element={<Outlet />}>
+					<Route path="Intro-to-Numpy" element={<NumpyBasics />} />
+					{/* if we have child element we need added here */}
+				</Route>
+				<Route path="Pandas-Library" element={<Outlet />}>
+					<Route path="Intro-to-pandas" element={<PandasBasics />} />
+				</Route>
+				<Route path="Matplotlib-Library" element={<Outlet />}>
+					<Route path="Intro-to-Matplotlib" element={<MatplotlibBasics />} />
+				</Route>
 
-        {/* TensorFlow  */}
-        <Route path="/TensorFlow" element={<Outlet />}>
-          <Route path="Introduction-to-tensorFlow" element={<TensorFlow />} />
-        </Route>
+				{/* TensorFlow  */}
+				<Route path="/TensorFlow" element={<Outlet />}>
+					<Route path="Introduction-to-tensorFlow" element={<TensorFlow />} />
+				</Route>
 
-        {/* remaing routes*/}
+				{/* profile route */}
+				<Route path="/profile" element={<Profile />} />
 
-      </Routes>
-    </RootLayout>
-  );
+				{/* remaing routes*/}
+			</Routes>
+		</RootLayout>
+	);
 };
 
 export default App;
