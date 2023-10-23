@@ -28,7 +28,7 @@ const SubMenu = ({ data }) => {
                 height: 0,
               }
         }
-        className="flex h-0 flex-col text-[15px] font-normal overflow-hidden text-black bg-[#EAEDED] hover:text-[#8800ff] "
+        className="flex h-0 flex-col text-[15px] font-normal overflow-hidden text-black bg-[#EAEDED]"
         style={{
           fontFamily: "Poppins, sans-serif",
         }}
@@ -39,7 +39,7 @@ const SubMenu = ({ data }) => {
 
             <NavLink
               to={`${data.name}/${child.route}`}
-              className={`link !bg-transparent capitalize ${
+              className={`link !bg-transparent capitalize hover:text-[#8800ff] ${
                 i < childrenCount - 1 ? "border-b  border-[#8800ff] -mx-1" : ""
               } `} // Add a bottom border to the last submenu link with the specified color
             >
