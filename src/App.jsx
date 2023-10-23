@@ -23,7 +23,7 @@ import PlayGround from "./Python/PlayGround";
 
 import Navbar from "./Components/Navbar";
 import TensorFlow from "./Python_Library_Pages/TensorFlow/Introduction-to-tensorFlow";
-
+import IntroAndInstall from "./Python_Library_Pages/Flask/Introduction-to-flask";
 
 
 const App = () => {
@@ -99,6 +99,10 @@ const App = () => {
             element={<Tensors />}
           />
           <Route path="Introduction-to-Variables" element={<Variables />} />
+        </Route>
+
+        <Route path="/Flask" element={<Outlet />}>
+          <Route path="Introduction-to-flask" element={<IntroAndInstall />} />
         </Route>
 
         {/* remaing routes*/}
