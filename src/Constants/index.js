@@ -240,7 +240,7 @@ export const subMenusList = [
 },
 {
     "name": "NLTK (Natural Language Toolkit)",
-    "title": "NLTK (Natural Language Toolkit)",
+    "title": "NLTK",
     "route": "/NLTK-(Natural-Language-Toolkit)/Introduction-to-NLTK-(Natural-Language-Toolkit)",
     "children": [
         {
