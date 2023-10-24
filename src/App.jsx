@@ -13,6 +13,7 @@ import PlayGround from "./Python/PlayGround";
 import Navbar from "./Components/Navbar";
 import TensorFlow from "./Python_Library_Pages/TensorFlow/Introduction-to-tensorFlow";
 import Profile from "./Components/Profile";
+import TeamProfile from "./Components/TeamProfile";
 
 const App = () => {
 	return (
@@ -51,7 +52,7 @@ const App = () => {
 				</Route>
 
 				{/* profile route */}
-				<Route path="/profile" element={<Profile />} />
+				<Route path="/profile" element={<TeamProfile />} />
 
 				{/* remaing routes*/}
 			</Routes>
