@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 const AllApps = () => {
   return (
-    <div className="max-h-screen p-8">
+    <div className="max-h-screen p-3 lg:p-8">
       <center className="flex flex-col items-center">
         <h1 className="text-[3rem] ">PyLibLog</h1>
         <p className="mt-6 mb-3 text-[1.8rem] text-gray-700">
           Your Python Library Encyclopedia 🐍📚
         </p>
-        <div className="flex flex-row gap-2 justify-center ">
+        <div className="flex flex-row gap-2 justify-center items-center">
           <h3 className="text-gray-700">
             PyLibLog is open source project... you can also contribute
           </h3>
@@ -22,17 +22,17 @@ const AllApps = () => {
           </a>
         </div>
       </center>
-      <div className="flex flex-col ml-10 mt-10">
+      <div className="flex flex-col mt-10">
         <h3 className="text-xl mb-1 text-bold">Get Start</h3>
         <p className="text-gray-600 mb-3">Explore all python libraries</p>
-        <ul>
+        <ul className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2 ">
           {subMenusList?.map((data, i) => (
             <li
               key={i}
-              className="list-none hover:text-[#8800ff] cursor-pointer p-1.5 text-lg text-gray-900 ml-[3rem]"
+              className="list-none group hover:bg-[#8800ff] hover:text-white p-2 shadow-sm duration-500 ease-in-out  cursor-pointer border text-lg text-black"
             >
               {/* {data.name} */}
-              <span style={{ marginRight: "1rem" }}>{i + 1}.</span>
+              <span className="border-b-2  border-b-[#8800ff] group-hover:border-b-white  p-1" style={{ marginRight: "1rem" }}>{i + 1}.</span>
               <Link to={data.route}>{data.title}</Link>
             </li>
           ))}
