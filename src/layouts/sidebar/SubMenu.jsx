@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { BsCheck } from "react-icons/bs";
+import { BiCaretDown } from "react-icons/bi";
 import { NavLink, useLocation } from "react-router-dom";
 
 const SubMenu = ({ data }) => {
@@ -13,9 +13,8 @@ const SubMenu = ({ data }) => {
         className={`link ${pathname.includes(data.name) && "text-white-600"}`}
         onClick={() => setSubMenuOpen(!subMenuOpen)}
       >
-        {/* <data.icon size={23} className="min-w-max" /> */}
-        <p className="flex-1 capitalize">{data.title}</p>
-        <BsCheck size={23} />
+        <p className="flex-1 capitalize pl-2 font-bold">{data.title}</p>
+        <BiCaretDown size={23} />
       </li>
 
       <motion.ul
@@ -28,20 +27,21 @@ const SubMenu = ({ data }) => {
                 height: 0,
               }
         }
-        className="flex h-0 flex-col text-[15px] font-normal overflow-hidden text-black bg-[#EAEDED] hover:text-[#8800ff] "
+        className="flex h-0 flex-col text-[15px] font-normal overflow-hidden text-black bg-[#EAEDED] hover:text-[#8800ff]"
         style={{
           fontFamily: "Poppins, sans-serif",
         }}
       >
         {data.children?.map((child, i) => (
-          <li key={i}>
-            {/* className="hover:text-blue-600 hover:font-medium" */}
-
+          <li
+            key={i}
+            className={`text-black hover:text-[#8800ff] mt-2 pl-3 ${
+              i < childrenCount  ? "border-b  border-[#8800ff] rounded-lg" : ""
+            }`}
+          >
             <NavLink
               to={`${data.name}/${child.route}`}
-              className={`link !bg-transparent capitalize ${
-                i < childrenCount - 1 ? "border-b  border-[#8800ff] -mx-1" : ""
-              } `} // Add a bottom border to the last submenu link with the specified color
+              className={`link  capitalize  visited:bg-[#EAEDED]`} // Add a bottom border to the last submenu link with the specified color
             >
               {child.title}
             </NavLink>
