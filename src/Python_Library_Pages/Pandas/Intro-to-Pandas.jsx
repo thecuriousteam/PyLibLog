@@ -1,5 +1,4 @@
 import React from "react";
-
 const PandasBasics = () => {
   const containerStyle = {
     fontFamily: 'Arial, sans-serif',
@@ -131,3 +130,4 @@ print(data.head())
 };
 
 export default PandasBasics;
+
