@@ -3,6 +3,14 @@ Python is renowned for its extensive library ecosystem, but navigating through t
 Teaching and sharing information about Python libraries through blog posts. These blogs include explanations, definitions, examples, and what happens when you use them.
 </br>
 
+## Python Libraries in PyLibLog 🐍
+
+### Intermediate
+Pandas 🟢 NumPy 
+
+### Advanced
+TensorFlow
+
 # Contributing Guidelines
 
 Welcome to our open-source project! By contributing, you help us create better software for everyone.
