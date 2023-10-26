@@ -36,29 +36,28 @@ const PlayGround = () => {
     setShowMainOrShell(false);
   };
 
-  const run = () => {
-    try {
-      logs = [];
-      window.brython([1]);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+	const run = () => {
+		try {
+			logs = [];
+			window.brython([1]);
+		} catch (error) {
+			console.log(error);
+		}
+	};
 
-  const handleConsoleLog = (value) => {
-    if (value !== "using indexedDB for stdlib modules cache") {
-      logs.push(`${value}`);
-      setOutputArr([...logs]);
-    }
-  };
+	const handleConsoleLog = (value) => {
+		if (value !== "using indexedDB for stdlib modules cache") {
+			logs.push(`${value}`);
+			setOutputArr([...logs]);
+		}
+	};
 
-  const clearLogs = () => {
-    logs = [];
-    setOutputArr([]);
-  };
+	const clearLogs = () => {
+		logs = [];
+		setOutputArr([]);
+	};
 
-  window.console.log = handleConsoleLog;
-
+	window.console.log = handleConsoleLog;
   return (
     <HelmetProvider>
       <div
