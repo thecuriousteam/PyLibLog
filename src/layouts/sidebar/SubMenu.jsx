@@ -1,20 +1,29 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { BiCaretDown } from "react-icons/bi";
+import { BiCaretDown,BiCaretUp } from "react-icons/bi";
 import { NavLink, useLocation } from "react-router-dom";
 
 const SubMenu = ({ data }) => {
   const { pathname } = useLocation();
   const [subMenuOpen, setSubMenuOpen] = useState(false);
   const childrenCount = data.children?.length || 0;
+
+  const toggleSubMenu = () => {
+    setSubMenuOpen(!subMenuOpen);
+  };
+
   return (
     <>
       <li
         className={`link ${pathname.includes(data.name) && "text-white-600"}`}
         onClick={() => setSubMenuOpen(!subMenuOpen)}
       >
-        <p className="flex-1 capitalize pl-2 font-bold">{data.title}</p>
+        {/* <p className="flex-1 capitalize pl-2 font-bold">{data.title}</p>
         <BiCaretDown size={23} />
+      </li> */}
+
+      <p className="flex-1 capitalize pl-2 font-bold">{data.title}</p>
+        {subMenuOpen ? <BiCaretUp size={23} /> : <BiCaretDown size={23} /> } {/* Toggle arrow based on submenu open status */}
       </li>
 
       <motion.ul
