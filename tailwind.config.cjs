@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         Montserrat: "Montserrat",
       },
+      colors:{
+        'custom-purple' : '#9004FC'
+      }
     },
   },
   plugins: [require("tailwind-scrollbar")],

@@ -1,23 +1,25 @@
 import { Route, Routes, Outlet } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
 import AllApps from "./Python_Library_Pages/AllApps";
-
 import PythonBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-Python";
 import NumpyBasics from "./Python_Library_Pages/Numpy/Intro-to-Numpy";
 import PandasBasics from "./Python_Library_Pages/Pandas/Intro-to-Pandas";
 import StreamlitBasics from "./Python_Library_Pages/Streamlit/Intro-to-Streamlit";
 import MatplotlibBasics from "./Python_Library_Pages/Matplotlib/Intro-to-Matplotlib";
+import PandasBasics from "./Python_Library_Pages/Pandas/Intro-to-Pandas";
 import OperatorsBasics from "./Python_Library_Pages/Python_Basics/Intrduction-to-Operators";
 import FunctionsBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-Functions";
 import PlayGround from "./Python/PlayGround";
+
+import Navbar from "./Components/Navbar";
 import TensorFlow from "./Python_Library_Pages/TensorFlow/Introduction-to-tensorFlow";
-import Tensors from "./Python_Library_Pages/TensorFlow/Tensors";
-import Variables from "./Python_Library_Pages/TensorFlow/Variables";
-import Installation from "./Python_Library_Pages/TensorFlow/Installation";
+import IntroAndInstall from "./Python_Library_Pages/Flask/Introduction-to-flask";
+
 
 const App = () => {
   return (
     <RootLayout>
+      <Navbar />
       <Routes>
         <Route path="/" element={<AllApps />} />
 
@@ -59,14 +61,14 @@ const App = () => {
         {/* TensorFlow  */}
         <Route path="/TensorFlow" element={<Outlet />}>
           <Route path="Introduction-to-tensorFlow" element={<TensorFlow />} />
-          <Route path="Installation" element={<Installation />}/>
-          <Route
-            path="Introduction-to-Tensors"
-            element={<Tensors />}
-          />
-          <Route path="Introduction-to-Variables" element={<Variables />} />
         </Route>
+
+        <Route path="/Flask" element={<Outlet />}>
+          <Route path="Introduction-to-flask" element={<IntroAndInstall />} />
+        </Route>
+
         {/* remaing routes*/}
+
       </Routes>
     </RootLayout>
   );
