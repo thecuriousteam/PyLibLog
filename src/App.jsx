@@ -1,9 +1,10 @@
 import { Route, Routes, Outlet } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
 import AllApps from "./Python_Library_Pages/AllApps";
-
 import PythonBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-Python";
 import NumpyBasics from "./Python_Library_Pages/Numpy/Intro-to-Numpy";
+import PandasBasics from "./Python_Library_Pages/Pandas/Intro-to-Pandas";
+import StreamlitBasics from "./Python_Library_Pages/Streamlit/Intro-to-Streamlit";
 import MatplotlibBasics from "./Python_Library_Pages/Matplotlib/Intro-to-Matplotlib";
 import PandasBasics from "./Python_Library_Pages/Pandas/Intro-to-Pandas";
 import OperatorsBasics from "./Python_Library_Pages/Python_Basics/Intrduction-to-Operators";
@@ -40,6 +41,17 @@ const App = () => {
           {/* if we have child element we need added here */}
         </Route>
         <Route path="Pandas-Library" element={<Outlet />}>
+        <Route path="Intro-to-pandas" element={<PandasBasics />} />
+        
+
+          {/* <Route index element={<Two />} />
+          <Route path="Inbuilt-Functions" element={<Inbuilt />} />
+          <Route path="Loops-in-Python" element={<User />} /> */}
+
+        </Route>
+        <Route path="Streamlit-Library" element={<Outlet />}>
+        <Route path="Intro-to-Streamlit" element={<StreamlitBasics />} />
+
           <Route path="Intro-to-pandas" element={<PandasBasics />} />
         </Route>
         <Route path="Matplotlib-Library" element={<Outlet />}>

@@ -285,6 +285,16 @@ export const subMenusList = [
     ],
   },
   {
+    name: "Streamlit-Library",
+    title: "4. Intro to Streamlit",
+    children: [
+      {
+        title: "Intro to Streamlit",
+        name: "Intro-to-Streamlit",
+      },
+      ],
+  },
+  {
     name: "Pillow (PIL)",
     title: "Pillow (PIL)",
     route: "/Pillow-(PIL)/Introduction-to-Pillow-(PIL)",
