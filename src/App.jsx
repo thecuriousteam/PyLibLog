@@ -13,9 +13,9 @@ import PlayGround from "./Python/PlayGround";
 import Navbar from "./Components/Navbar";
 import TensorFlow from "./Python_Library_Pages/TensorFlow/Introduction-to-tensorFlow";
 import IntroAndInstall from "./Python_Library_Pages/Flask/Introduction-to-flask";
+import PYQT from "./Python_Library_Pages/PYQT/Introduction-to-PYQT";
 import TkinterIntro from "./Python_Library_Pages/Tkinter/Introduction-to-tkinter";
 import Seaborn from "./Python_Library_Pages/Seaborn/Introduction-to-Seaborn";
-
 
 
 const App = () => {
@@ -62,7 +62,9 @@ const App = () => {
         <Route path="/Flask" element={<Outlet />}>
           <Route path="Introduction-to-flask" element={<IntroAndInstall />} />
         </Route>
-
+        <Route path="/PYQT" element={<Outlet />}>
+          <Route path="Introduction-to-PYQT" element={<PYQT />} />
+        </Route>
         <Route path="/Tkinter" element={<Outlet />}>
           <Route path="Introduction-to-tkinter" element = {<TkinterIntro />} />
         </Route>
