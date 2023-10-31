@@ -47,7 +47,7 @@ Before you start contributing, please take a moment to read the following guidel
    3. Heading Font - https://fonts.google.com/specimen/Poppins
    4. Body Font Body -  https://fonts.google.com/specimen/Source+Serif+4
    5. Font Size - https://medium.com/eightshapes-llc/typography-in-design-systems-6ed771432f1e
-   6. Standrad Website Design reference
+   6. Standard Website Design reference
       1. https://dart-tutorial.com/
       2. https://www.w3schools.com/html/
       3. https://www.studytonight.com/html5-references/html-a-tag

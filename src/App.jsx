@@ -14,6 +14,8 @@ import Navbar from "./Components/Navbar";
 import TensorFlow from "./Python_Library_Pages/TensorFlow/Introduction-to-tensorFlow";
 import IntroAndInstall from "./Python_Library_Pages/Flask/Introduction-to-flask";
 import TkinterIntro from "./Python_Library_Pages/Tkinter/Introduction-to-tkinter";
+import Seaborn from "./Python_Library_Pages/Seaborn/Introduction-to-Seaborn";
+
 
 
 const App = () => {
@@ -45,6 +47,11 @@ const App = () => {
         </Route>
         <Route path="Matplotlib-Library" element={<Outlet />}>
           <Route path="Intro-to-Matplotlib" element={<MatplotlibBasics />} />
+        </Route>
+
+        {/* Seaborn  */}
+        <Route path="/Seaborn" element={<Outlet />}>
+          <Route path="Introduction-to-seaborn" element={<Seaborn />} />
         </Route>
 
         {/* TensorFlow  */}
