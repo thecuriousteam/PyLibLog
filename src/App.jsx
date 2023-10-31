@@ -14,17 +14,16 @@ import PlayGround from "./Python/PlayGround";
 import DjangoIntro from "./Python_Library_Pages/Django/Introduction-to-django";
 
 import Navbar from "./Components/Navbar";
-
-
 import TensorFlow from "./Python_Library_Pages/TensorFlow/Introduction-to-tensorFlow";
-import Tensors from "./Python_Library_Pages/TensorFlow/Tensors";
-import Variables from "./Python_Library_Pages/TensorFlow/Variables";
-import Installation from "./Python_Library_Pages/TensorFlow/Installation";
+import IntroAndInstall from "./Python_Library_Pages/Flask/Introduction-to-flask";
+import PYQT from "./Python_Library_Pages/PYQT/Introduction-to-PYQT";
+import TkinterIntro from "./Python_Library_Pages/Tkinter/Introduction-to-tkinter";
+import Seaborn from "./Python_Library_Pages/Seaborn/Introduction-to-Seaborn";
 
 const App = () => {
   return (
     <RootLayout>
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<AllApps />} />
 
@@ -51,22 +50,30 @@ const App = () => {
         <Route path="Matplotlib-Library" element={<Outlet />}>
           <Route path="Intro-to-Matplotlib" element={<MatplotlibBasics />} />
         </Route>
-
         {/* django */}
         <Route path="/Django" element={<Outlet />}>
           <Route path="Introduction-to-django" element={<DjangoIntro />} />
           <Route path="Installation" element={<Installation />} />
+        {/* Seaborn  */}
+        <Route path="/Seaborn" element={<Outlet />}>
+          <Route path="Introduction-to-seaborn" element={<Seaborn />} />
+        </Route>
         {/* TensorFlow  */}
         <Route path="/TensorFlow" element={<Outlet />}>
           <Route path="Introduction-to-tensorFlow" element={<TensorFlow />} />
-          <Route path="Installation" element={<Installation />}/>
-          <Route
-            path="Introduction-to-Tensors"
-            element={<Tensors />}
-          />
-          <Route path="Introduction-to-Variables" element={<Variables />} />
+        </Route>
+
+        <Route path="/Flask" element={<Outlet />}>
+          <Route path="Introduction-to-flask" element={<IntroAndInstall />} />
+        </Route>
+        <Route path="/PYQT" element={<Outlet />}>
+          <Route path="Introduction-to-PYQT" element={<PYQT />} />
+        </Route>
+        <Route path="/Tkinter" element={<Outlet />}>
+          <Route path="Introduction-to-tkinter" element = {<TkinterIntro />} />
         </Route>
         {/* remaing routes*/}
+
       </Routes>
     </RootLayout>
   );
