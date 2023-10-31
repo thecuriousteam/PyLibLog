@@ -2,7 +2,7 @@ import React from "react";
 
 const PythonBasics = () => {
   return (
-    <div>
+    <div className="python-intro">
 
       <h1><b>1. Introduction to Python</b></h1>
       <br />
