@@ -285,6 +285,9 @@ export const subMenusList = [
     ],
   },
   {
+    name: "Django",
+    title: "Django",
+    route: "/Django/Introduction-to-django",
     name: "Pillow (PIL)",
     title: "Pillow (PIL)",
     route: "/Pillow-(PIL)/Introduction-to-Pillow-(PIL)",
@@ -555,8 +558,19 @@ export const subMenusList = [
     name: "TensorFlow",
     title: "TensorFlow",
     route: "/TensorFlow/Introduction-to-tensorFlow",
+
     children: [
       {
+        title: "Installation",
+        route: "Installation",
+      },
+      {
+
+        title: "Introduction to Django",
+        route: "Introduction-to-django",
+      }
+    ],
+  },
         title: "Introduction to TensorFlow",
         route: "Introduction-to-TensorFlow",
       },
@@ -584,6 +598,9 @@ export const subMenusList = [
         route: "Advanced-tkinter",
       },
     ],
+  }
+
+
   },
   {
     name: "Twisted",

@@ -10,13 +10,15 @@ import OperatorsBasics from "./Python_Library_Pages/Python_Basics/Intrduction-to
 import FunctionsBasics from "./Python_Library_Pages/Python_Basics/Introduction-to-Functions";
 import PlayGround from "./Python/PlayGround";
 
+
+import DjangoIntro from "./Python_Library_Pages/Django/Introduction-to-django";
+
 import Navbar from "./Components/Navbar";
 import TensorFlow from "./Python_Library_Pages/TensorFlow/Introduction-to-tensorFlow";
 import IntroAndInstall from "./Python_Library_Pages/Flask/Introduction-to-flask";
 import PYQT from "./Python_Library_Pages/PYQT/Introduction-to-PYQT";
 import TkinterIntro from "./Python_Library_Pages/Tkinter/Introduction-to-tkinter";
 import Seaborn from "./Python_Library_Pages/Seaborn/Introduction-to-Seaborn";
-
 
 const App = () => {
   return (
@@ -48,12 +50,14 @@ const App = () => {
         <Route path="Matplotlib-Library" element={<Outlet />}>
           <Route path="Intro-to-Matplotlib" element={<MatplotlibBasics />} />
         </Route>
-
+        {/* django */}
+        <Route path="/Django" element={<Outlet />}>
+          <Route path="Introduction-to-django" element={<DjangoIntro />} />
+          <Route path="Installation" element={<Installation />} />
         {/* Seaborn  */}
         <Route path="/Seaborn" element={<Outlet />}>
           <Route path="Introduction-to-seaborn" element={<Seaborn />} />
         </Route>
-
         {/* TensorFlow  */}
         <Route path="/TensorFlow" element={<Outlet />}>
           <Route path="Introduction-to-tensorFlow" element={<TensorFlow />} />
