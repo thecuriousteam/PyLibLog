@@ -563,6 +563,29 @@ export const subMenusList = [
     ],
   },
   {
+    name: "Tkinter",
+    title: "Tkinter",
+    route: "/Tkinter/Introduction-to-tkinter",
+    children: [
+      {
+        title: "Introduction to tkinter",
+        route: "Introduction-to-tkinter",
+      },
+      {
+        title: "Exploring widgets in tkinter",
+        route: "Exploring-widgets-in-tkinter",
+      },
+      {
+        title: "Binding functions",
+        route: "Binding-functions",
+      },
+      {
+        title: "Advanced tkinter",
+        route: "Advanced-tkinter",
+      },
+    ],
+  },
+  {
     name: "Twisted",
     title: "Twisted",
     route: "/Twisted/Introduction-to-Twisted",
