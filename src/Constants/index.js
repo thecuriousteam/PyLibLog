@@ -285,6 +285,46 @@ export const subMenusList = [
     ],
   },
   {
+    name: "BeautifulSoup-Library",
+    title: "BeautifulSoup Library",
+    route: "/BeautifulSoup-Library/intro-to-BeautifulSoup",
+    children: [
+      {
+        title: "Intro to BeautifulSoup",
+        route: "Intro-to-BeautifulSoup",
+      },
+      {
+        title: "Getting Started With BeautifulSoup",
+        route: "Getting-Started-With-BS",
+      },
+      {
+        title: "Basics of BeautifulSoup",
+        route: "Basics-of-BeautifulSoup",
+      },
+      {
+        title: "Navigating The HTML Tree",
+        route: "Navigating-HTML-Tree",
+      },
+      {
+        title: "Extracting Data From Web-Pages",
+        route: "Extracting-Data-From-WebPage",
+      },
+      {
+        title: "Handling Complex HTML Structures",
+        route: "Handling-Complex-HTML",
+      },
+      {
+        title: "Real-World Examples and Case Studies",
+        route: "ReaL-World-Examples",
+      },
+      {
+        title: "Advanced Web Scraping Techniques",
+        route: "Advance-Web-Scrapping",
+      }
+    ],
+  },
+
+
     name: "Pillow (PIL)",
     title: "Pillow (PIL)",
     route: "/Pillow-(PIL)/Introduction-to-Pillow-(PIL)",
@@ -561,6 +601,9 @@ export const subMenusList = [
         route: "Introduction-to-TensorFlow",
       },
     ],
+  }
+
+
   },
   {
     name: "Tkinter",
