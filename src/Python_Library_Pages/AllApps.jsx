@@ -1,14 +1,33 @@
 import { subMenusList } from "../Constants";
 import githubicon from "../../assets/Logos & Favicon/github.png";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const AllApps = () => {
+  const [typedText, setTypedText] = useState(''); // State to store the typed text
+  const targetText = "Encyclopedia"; // The text you want to type
+
+  useEffect(() => {
+    // Create an interval to type the text
+    let currentIndex = 0;
+    const interval = setInterval(() => {
+      if (currentIndex <= targetText.length) {
+        setTypedText(targetText.slice(0, currentIndex)); // Update the typed text
+        currentIndex++;
+      } else {
+        clearInterval(interval); // Stop the interval when done
+      }
+    }, 100); // Adjust the interval duration as needed
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
   return (
     <div className="max-h-screen p-3 lg:p-8">
       <center className="flex flex-col items-center">
         <h1 className="text-[3rem] ">PyLibLog</h1>
         <p className="mt-6 mb-3 text-[1.8rem] text-gray-700">
-          Your Python Library Encyclopedia 🐍📚
+          Your Python Library {typedText} 🐍📚
         </p>
         <div className="flex flex-row gap-2 justify-center items-center">
           <h3 className="text-gray-700">
