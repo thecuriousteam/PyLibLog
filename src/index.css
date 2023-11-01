@@ -25,3 +25,14 @@
 .active {
   @apply bg-blue-100 text-blue-600;
 }
+
+.sidebart {
+  position: fixed !important ;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+}
