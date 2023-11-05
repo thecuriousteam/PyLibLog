@@ -68,6 +68,13 @@ const App = () => {
         <Route path="/Tkinter" element={<Outlet />}>
           <Route path="Introduction-to-tkinter" element = {<TkinterIntro />} />
         </Route>
+
+        
+        {/* Pytorch  */}
+        <Route path="/Pytorch" element={<Outlet />}>
+          <Route path="Introduction-to-pytorch" element={<IntroPytorch />} />
+        </Route>
+        
         {/* remaing routes*/}
 
       </Routes>
