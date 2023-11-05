@@ -16,7 +16,7 @@ import IntroAndInstall from "./Python_Library_Pages/Flask/Introduction-to-flask"
 import PYQT from "./Python_Library_Pages/PYQT/Introduction-to-PYQT";
 import TkinterIntro from "./Python_Library_Pages/Tkinter/Introduction-to-tkinter";
 import Seaborn from "./Python_Library_Pages/Seaborn/Introduction-to-Seaborn";
-
+import IntroPytorch from "./Python_Library_Pages/Pytorch/Introduction-to-pytorch"
 
 const App = () => {
   return (
@@ -68,6 +68,13 @@ const App = () => {
         <Route path="/Tkinter" element={<Outlet />}>
           <Route path="Introduction-to-tkinter" element = {<TkinterIntro />} />
         </Route>
+
+        
+        {/* Pytorch  */}
+        <Route path="/Pytorch" element={<Outlet />}>
+          <Route path="Introduction-to-pytorch" element={<IntroPytorch />} />
+        </Route>
+        
         {/* remaing routes*/}
 
       </Routes>
