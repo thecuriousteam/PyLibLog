@@ -59,15 +59,34 @@ const Sidebar = () => {
         transition: {
           damping: 40,
         },
-      },
-    };
+      };
+  // subMenusList.map(menu => {
+  //   console.log(menu);
+  // })  
+
+  useEffect(() => {
+    if (window.innerWidth <= 768) {
+      if (open) {
+        document.body.style.overflow = "hidden"; // Disable scrolling on the body
+      } else {
+        document.body.style.overflow = "auto"; // Enable scrolling on the body
+      }
+
+      return () => {
+        document.body.style.overflow = "auto"; // Ensure scrolling is re-enabled on unmount
+      };
+    }
+  }, [open]);
 
   return (
-    <div>
+    <div className=" relative">
       <div
         onClick={() => setOpen(false)}
-        className={`md:hidden fixed inset-0 max-h-screen z-[998] bg-black/50 ${open ? "block" : "hidden"
-          } `}
+
+        className={`md:hidden fixed inset-0 overflow-hidden z-[998] bg-black/50 ${
+          open ? "block" : "hidden"
+        } `}
+
       ></div>
       <motion.div
         ref={sidebarRef}
@@ -75,10 +94,10 @@ const Sidebar = () => {
         initial={{ x: isTabletMid ? -250 : 0 }}
         animate={open ? "open" : "closed"}
         // sidebar color code (#E0E0E0)
-        className="border-r border-[#BFC9CA] shadow-lg bg-[#EAEDED] text-black  text-[16px] shadow-xl z-[999] max-w-[19rem] w-[19rem] overflow-hidden md:relative fixed h-screen"
+        className="border-r border-[#BFC9CA]  bg-[#EAEDED] text-black  text-[16px] shadow-xl z-[999] max-w-[19rem] w-[19rem] md:relative overflow-y-scroll scrollbar-thin fixed h-screen"
         style={{ fontFamily: "Poppins, sans-serif", fontWeight: "light" }}
       >
-        <div className="flex-col pt-5 pl-5 pr-5 gap-2.5 font-medium border-b h-[150px] border-slate-300  bg-[#8800ff]">
+        <div className=" flex-col pt-5 pl-5 pr-5 gap-2.5 font-medium border-b h-[150px] border-slate-300  bg-[#8800ff]">
           {/* <img
             src="https://img.icons8.com/color/512/firebase.png"
             width={45}
@@ -95,9 +114,10 @@ const Sidebar = () => {
           <Search />
         </div>
 
+        <div className="my-3"></div>
+        <div className="flex flex-col ">
+          <div className="flex justify-center items-center mt-3">
 
-        <div className="flex flex-col  h-full">
-          <div className="flex justify-center items-center my-3">
             <Link to="/play-ground">
               <button className="px-5 py-1 bg-[#8800ff] rounded  text-white  text-[16px]">
                 Python PlayGround
@@ -166,7 +186,7 @@ const Sidebar = () => {
 
         </motion.div>
       </motion.div>
-      <div className="m-3 md:hidden  " onClick={() => setOpen(true)}>
+      <div className="m-3 md:hidden" onClick={() => setOpen(true)}>
         <MdMenu size={25} />
       </div>
     </div>
