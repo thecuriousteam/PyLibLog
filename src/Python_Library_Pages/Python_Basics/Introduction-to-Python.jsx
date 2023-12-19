@@ -2,45 +2,48 @@ import React from "react";
 
 const PythonBasics = () => {
   return (
-    <div>
+    <div className=" break-words w-screen lg:w-auto overflow-x-hidden px-7 my-10">
 
       <h1><b>1. Introduction to Python</b></h1>
       <br />
-      <pre>
-        <code>
-          {`Python is a high-level, interpreted programming language known for its readability and simplicity. It:
-  - Supports multiple programming paradigms.
-  - Has a large standard library.
-  - Python is free and easy to learn.
+
+      <pre className="text-sm overflow-x-auto p-5">
+          <code>
+            {`Python is a high-level, interpreted programming language known for its readability and simplicity. It:
+- Supports multiple programming paradigms.
+- Has a large standard library.
+- Python is free and easy to learn.
 
 This doc will help you to get all the knowledge you want for getting started with Python. 
 If you have never programmed anything before and are just getting started, this might be the blog for you. 
 Python has many use cases in different industries such as
 
-  Web Development:
-    - Frameworks like Django and Flask make Python a popular choice for building web applications.
+Web Development:
+  - Frameworks like Django and Flask make Python a popular choice for building web applications.
 
-  Data Science and Machine Learning:
-    - Python is extensively used for data analysis, machine learning, and artificial intelligence.
-    - Libraries such as NumPy, Pandas, Scikit-learn, TensorFlow, and PyTorch are widely employed.
+Data Science and Machine Learning:
+  - Python is extensively used for data analysis, machine learning, and artificial intelligence.
+  - Libraries such as NumPy, Pandas, Scikit-learn, TensorFlow, and PyTorch are widely employed.
 
-  Finance:
-    - Python is used in finance for quantitative analysis, risk management, and algorithmic trading.
-    - Libraries such as Pandas and NumPy are particularly useful in this domain.
+Finance:
+  - Python is used in finance for quantitative analysis, risk management, and algorithmic trading.
+  - Libraries such as Pandas and NumPy are particularly useful in this domain.
 
-  Education:
-    - Python is widely used in teaching programming due to its simplicity.
-    - It's often the first language taught in many computer science courses.
+Education:
+  - Python is widely used in teaching programming due to its simplicity.
+  - It's often the first language taught in many computer science courses.
 
-  Game Development:
-    - Python is used in the game development industry, and libraries like Pygame make it 
-      easier to develop 2D games.
+Game Development:
+  - Python is used in the game development industry, and libraries like Pygame make it 
+    easier to develop 2D games.
 
-  GIS (Geographic Information System):
-    - Python is used for GIS applications, and libraries like Geopandas and ArcPy are popular 
-      in this field.`}
-        </code>
-      </pre>
+GIS (Geographic Information System):
+  - Python is used for GIS applications, and libraries like Geopandas and ArcPy are popular 
+    in this field.`}
+          </code>
+        </pre>
+
+
       <br />
       <br />
 
